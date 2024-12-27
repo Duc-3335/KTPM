@@ -1,0 +1,55 @@
+﻿@using quan_ly_tai_nguyen_rung.ViewModels
+@model AnimalFacilityViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form method="post" asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Name">Tên</label>
+        <input asp-for="Name" class="form-control" placeholder="Enter name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Address">Address</label>
+        <input asp-for="Address" class="form-control" placeholder="Address">
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ContactFace">ContactFace</label>
+        <input asp-for="ContactFace" class="form-control" placeholder="ContactFace">
+        <span asp-validation-for="ContactFace" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ContactMail">ContactMail</label>
+        <input asp-for="ContactMail" class="form-control" placeholder="ContactMail">
+        <span asp-validation-for="ContactMail" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ContactPhone">ContactPhone</label>
+        <input asp-for="ContactPhone" class="form-control" placeholder="ContactPhone">
+        <span asp-validation-for="ContactPhone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Labor">Labor</label>
+        <input asp-for="Labor" class="form-control" placeholder="Labor" />
+        <span asp-validation-for="Labor" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Acreage">Acreage</label>
+        <input asp-for="Acreage" class="form-control" placeholder="Acreage">
+        <span asp-validation-for="Acreage" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CommuneId" class="control-label">Commune</label>
+        <select asp-for="CommuneId" asp-items="ViewBag.Communes" class="form-control">
+            <option value="">-- Select Commune --</option>
+        </select>
+        <span asp-validation-for="CommuneId" class="text-danger"></span>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

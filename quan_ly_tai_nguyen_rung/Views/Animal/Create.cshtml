@@ -1,0 +1,85 @@
+﻿
+@using quan_ly_tai_nguyen_rung.ViewModels
+@model AnimalViewModel
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form method="post" asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Name">Tên</label>
+        <input asp-for="Name" class="form-control" placeholder="Enter name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Generic">Loài</label>
+        <select asp-for="Generic" asp-items="@Html.GetEnumSelectList<quan_ly_tai_nguyen_rung.DATA.@enum.generic>()" class="form-control form-control-lg">
+            <option>--Select__</option>
+        </select>
+        <span asp-validation-for="Generic" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DateFound">Date found</label>
+        <input asp-for="DateFound" class="form-control" placeholder="Date Found">
+        <span asp-validation-for="DateFound" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PreviousQuantity">Previous Quantity</label>
+        <input asp-for="PreviousQuantity" class="form-control" placeholder="Previous Quantity">
+        <span asp-validation-for="PreviousQuantity" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Status">Status</label>
+        <select asp-for="Status" asp-items="@Html.GetEnumSelectList<quan_ly_tai_nguyen_rung.DATA.@enum.status>()" class="form-control form-control-lg">
+            <option>--Select__</option>
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Fluctuation">Fluctuation</label>
+        <select asp-for="Fluctuation" class="form-control form-control-lg">
+            <option value="">--Select--</option>
+            <option value="true">ChuKi</option>
+            <option value="false">KhongTheoChuki</option>
+        </select>
+        <span asp-validation-for="Fluctuation" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Date">Date</label>
+        <input asp-for="Date" class="form-control" placeholder="Date">
+        <span asp-validation-for="Date" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Reason">Reason</label>
+        <input asp-for="Reason" class="form-control" placeholder="Reason" />
+        <span asp-validation-for="Reason" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Location">Location</label>
+        <input asp-for="Location" class="form-control" placeholder="Location">
+        <span asp-validation-for="Location" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="IsActive">Is_active</label>
+        <select asp-for="IsActive" class="form-control form-control-lg">
+            <option value="">--Select--</option>
+            <option value="true">Giam</option>
+            <option value="false">Tang</option>
+        </select>
+        <span asp-validation-for="IsActive" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CurrentQuantity">CurrentQuantity</label>
+        <input asp-for="CurrentQuantity" class="form-control" placeholder="is active">
+        <span asp-validation-for="CurrentQuantity" class="text-danger"></span>
+    </div>
+    @* <div class="form-group">
+        <label asp-for="AnimalFacilityId" class="control-label">Facility</label>
+        <select asp-for="AnimalFacilityId" class="form-control" asp-items="ViewBag.AnimalFacilities"></select>
+        <span asp-validation-for="AnimalFacilityId" class="text-danger"></span>
+    </div> *@
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

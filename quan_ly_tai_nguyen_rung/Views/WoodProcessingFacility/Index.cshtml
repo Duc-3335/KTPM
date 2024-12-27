@@ -1,0 +1,37 @@
+﻿@model IEnumerable<quan_ly_tai_nguyen_rung.Models.section3.WoodProcessingFacility>
+
+<h2>Các cơ sở chế biến gỗ</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tên</th>
+            <th>Trạng thái</th>
+            <th>Địa chỉ</th>
+            <th>Liên hệ</th>
+            <th>Nhân công</th>
+            <th>Diện tích</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var facility in Model)
+        {
+            < tr >
+            < td > @facility.Name </ td >
+            < td >@(facility.Status ? "BẬT" : "TẮT") </ td >
+            < td > @facility.Address </ td >
+            < td > @facility.ContactMail / @facility.ContactPhone </ td >
+            < td > @facility.Labor </ td >
+            < td > @facility.Acreage </ td >
+            < td >
+            < a asp - action = "Details" asp - route - id = "@facility.Id" > Chi tiết </ a > |
+            < a asp - action = "Edit" asp - route - id = "@facility.Id" > Chỉnh sửa </ a > |
+            < a asp - action = "Delete" asp - route - id = "@facility.Id" > Xóa </ a >
+            </ td >
+            </ tr >
+        }
+    </tbody>
+</table>
+
+<a asp-controller="Name" asp-action="Create">Tạo mới</a>

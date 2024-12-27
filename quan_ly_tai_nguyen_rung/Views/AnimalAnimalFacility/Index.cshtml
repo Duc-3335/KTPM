@@ -1,0 +1,38 @@
+﻿@model IEnumerable<quan_ly_tai_nguyen_rung.Models.section4.AnimalAnimalFacility>
+
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+        @using (Html.BeginForm("SearchByName", "AnimalAnimalFacility", FormMethod.Get))
+        {
+            <div class="row">
+                <div class="col-md-8">
+                    <input type="text" name="name" class="form-control" placeholder="Nhập tên cơ sở lưu trữ hoặc động vật" value="@ViewContext.HttpContext.Request.Query["name"]" />
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+                </div>
+            </div>
+        }
+        <a asp-controller="AnimalAnimalFacility" asp-action="Create" class="btn btn-sm btn-success mb-3">Create</a>
+
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Animal Name</th>
+                    <th scope="col">Facility Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Animal.Name</td> <!-- Thay thế bằng property phù hợp -->
+                        <td>@item.AnimalFacility.Name</td> <!-- Thay thế bằng property phù hợp -->
+                        <td><a asp-controller="AnimalAnimalFacility" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-success mb-3">Delete</a></td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

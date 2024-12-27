@@ -1,0 +1,29 @@
+﻿@using quan_ly_tai_nguyen_rung.Models.section4
+@model AnimalAnimalFacility
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form method="post" asp-action="Delete" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="AnimalId" class="control-label">Animal</label>
+        <select asp-for="AnimalId" asp-items="ViewBag.Animals" class="form-control">
+            <option value="">-- Select Animal --</option>
+        </select>
+        <span asp-validation-for="AnimalId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AnimalFacilityId" class="control-label">AnimalFacility</label>
+        <select asp-for="AnimalFacilityId" asp-items="ViewBag.AnimalFacilities" class="form-control">
+            <option value="">-- Select AnimalFacility --</option>
+        </select>
+        <span asp-validation-for="AnimalFacilityId" class="text-danger"></span>
+    </div>
+</form>
+<div class="form-group">
+    <form action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Confirm" class="btn btn-danger float-right mt-3" />
+    </form>
+</div>
