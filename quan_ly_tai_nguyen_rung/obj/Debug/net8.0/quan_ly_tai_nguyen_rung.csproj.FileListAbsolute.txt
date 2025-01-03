@@ -169,3 +169,5 @@ E:\KTPM_PJ\quan_ly_tai_nguyen_rung\obj\Debug\net8.0\refint\quan_ly_tai_nguyen_ru
 E:\KTPM_PJ\quan_ly_tai_nguyen_rung\obj\Debug\net8.0\quan_ly_tai_nguyen_rung.pdb
 E:\KTPM_PJ\quan_ly_tai_nguyen_rung\obj\Debug\net8.0\quan_ly_tai_nguyen_rung.genruntimeconfig.cache
 E:\KTPM_PJ\quan_ly_tai_nguyen_rung\obj\Debug\net8.0\ref\quan_ly_tai_nguyen_rung.dll
+E:\KTPM_PJ\quan_ly_tai_nguyen_rung\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\KTPM_PJ\quan_ly_tai_nguyen_rung\obj\Debug\net8.0\quan_ly_tai_nguyen_rung.sourcelink.json

@@ -82,6 +82,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/KTPM_PJ/quan_ly_tai_nguyen_rung/Views/Animal/Statistics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXFN0YXRpc3RpY3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/KTPM_PJ/quan_ly_tai_nguyen_rung/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -96,6 +100,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/KTPM_PJ/quan_ly_tai_nguyen_rung/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/KTPM_PJ/quan_ly_tai_nguyen_rung/Views/Statistic/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/KTPM_PJ/quan_ly_tai_nguyen_rung/Views/WoodProcessingFacility/Index.cshtml]

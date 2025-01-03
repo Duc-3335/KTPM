@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Newtonsoft.Json;
 using quan_ly_tai_nguyen_rung.DATA;
 using quan_ly_tai_nguyen_rung.Interfaces;
 using quan_ly_tai_nguyen_rung.Models.section1;
@@ -135,6 +136,34 @@ namespace quan_ly_tai_nguyen_rung.Controllers
             if (animalDetail == null) return View("Error");
             _animalRepository.Delete(animalDetail);
             return RedirectToAction("Index");
-        }     
+        }
+        
+        [HttpGet]
+        public IActionResult GetAnimalStatistics()
+        {
+            // Lấy dữ liệu và nhóm theo tháng/năm
+            var data = _animalRepository.GetAll()
+                .Result
+                .GroupBy(a => new { Year = a.Date.Year, Month = a.Date.Month })
+                .Select(g => new
+                {
+                    Year = g.Key.Year,
+                    Month = g.Key.Month,
+                    TotalQuantity = g.Sum(a => a.CurrentQuantity)
+                })
+                .OrderBy(g => g.Year)
+                .ThenBy(g => g.Month)
+                .ToList();
+
+            // Chuyển đổi dữ liệu thành JSON
+            var jsonData = JsonConvert.SerializeObject(data);
+            return Content(jsonData, "application/json");
+        }
+        public IActionResult Statistics()
+        {
+            return View();
+        }
+
+
     }
 }

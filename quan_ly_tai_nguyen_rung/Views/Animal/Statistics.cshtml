@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Thống kê động vật";
+}
+
+<h2>Thống kê số lượng động vật theo tháng</h2>
+<canvas id="animalChart" width="800" height="400"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Gọi API lấy dữ liệu JSON
+    fetch('/Animal/GetAnimalStatistics')
+        .then(response => response.json())
+        .then(data => {
+            // Tạo nhãn (labels) từ tháng/năm
+            const labels = data.map(item => `Tháng ${item.Month}/${item.Year}`);
+            // Lấy số lượng từ API
+            const quantities = data.map(item => item.TotalQuantity);
+
+            // Vẽ biểu đồ
+            const ctx = document.getElementById('animalChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar', // Dùng biểu đồ cột
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Số lượng động vật',
+                        data: quantities,
+                        backgroundColor: 'rgba(54, 162, 235, 0.6)', // Màu cột
+                        borderColor: 'rgba(54, 162, 235, 1)', // Màu viền cột
+                        borderWidth: 1 // Độ dày viền
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: true, // Hiển thị chú thích
+                            position: 'top'
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Tháng/Năm' // Tiêu đề trục X
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Số lượng' // Tiêu đề trục Y
+                            },
+                            beginAtZero: true // Bắt đầu từ 0
+                        }
+                    }
+                }
+            });
+        });
+
+</script>
