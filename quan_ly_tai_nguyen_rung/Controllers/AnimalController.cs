@@ -8,7 +8,7 @@ using quan_ly_tai_nguyen_rung.Interfaces;
 using quan_ly_tai_nguyen_rung.Models.section1;
 using quan_ly_tai_nguyen_rung.Models.section4;
 using quan_ly_tai_nguyen_rung.ViewModels;
-//hello
+//hello yeah
 namespace quan_ly_tai_nguyen_rung.Controllers
 {
     public class AnimalController : Controller
