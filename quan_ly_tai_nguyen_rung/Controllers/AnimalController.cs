@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -8,7 +8,7 @@ using quan_ly_tai_nguyen_rung.Interfaces;
 using quan_ly_tai_nguyen_rung.Models.section1;
 using quan_ly_tai_nguyen_rung.Models.section4;
 using quan_ly_tai_nguyen_rung.ViewModels;
-//hello yeah
+
 namespace quan_ly_tai_nguyen_rung.Controllers
 {
     public class AnimalController : Controller
