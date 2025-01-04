@@ -44,6 +44,9 @@
                                 <a asp-controller="AnimalFacility" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
                                 <a asp-controller="AnimalFacility" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-sm btn-primary">View</a>
                             </td>
+                            <td>
+                                <a asp-controller="Animal" asp-action="SearchByName" asp-route-facilityId="@item.Id" class="btn btn-sm btn-primary">view Animal</a>
+                            </td>
                         </tr>
                         index++;
                     }

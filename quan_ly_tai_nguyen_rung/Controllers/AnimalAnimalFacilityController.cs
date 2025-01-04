@@ -31,7 +31,8 @@ namespace quan_ly_tai_nguyen_rung.Controllers
         //    AnimalAnimalFacility lk = await _animalAnimalFacilityRepository.GetIdByAsync(id);
         //    return View(lk);
         //}
-        public async Task<IActionResult> Create() {
+        public async Task<IActionResult> Create()
+        {
             var animal = await _animalRepository.GetAll();
             ViewBag.Animals = new SelectList(animal, "Id", "Name");
             var facility = await animalFacility.GetAll();
@@ -49,9 +50,9 @@ namespace quan_ly_tai_nguyen_rung.Controllers
             {
                 return View(animalAnimalFacilityVM);
             }
-                
 
-            
+
+
             var animalAnimalFacility = new AnimalAnimalFacility
             {
                 AnimalId = animalAnimalFacilityVM.AnimalId,
@@ -66,7 +67,7 @@ namespace quan_ly_tai_nguyen_rung.Controllers
             if (aaf == null) return View("Error");
             return View(aaf);
         }
-        [HttpPost, ActionName("Delete")] 
+        [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteA(int id)
         {
             var aaf = await _animalAnimalFacilityRepository.GetIdByAsync(id);

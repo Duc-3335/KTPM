@@ -194,6 +194,23 @@ namespace quan_ly_tai_nguyen_rung.Controllers
             IEnumerable<Animal> searchResults = await _animalRepository.GetAnimalByNameOfFacility(name, facilityId);
             return View("Index", searchResults);
         }
+        //public async Task<IActionResult> SearchAnimalsByFacilityId(int facilityId)
+        //{
+        //    var animals = await _animalRepository.GetAllOfFacility(facilityId); // Lấy tất cả động vật của facility
+        //    return View("Index", animals); // Trả về danh sách động vật
+        //}
+        public async Task<IActionResult> ViewAnimals(int facilityId)
+        {
+            var animals = await _animalRepository.GetAllOfFacility(facilityId);
+            if (animals == null || !animals.Any())
+            {
+                TempData["ErrorMessage"] = "Không có động vật nào liên quan đến cơ sở này.";
+                return RedirectToAction("Index", "AnimalFacility");
+            }
+            ViewBag.FacilityId = facilityId;
+            return View("Index", animals); // Hiển thị danh sách động vật trong View Index
+        }
+
 
         // GET: Animal/Delete/5
         public async Task<IActionResult> Delete(int id, int facilityId)
