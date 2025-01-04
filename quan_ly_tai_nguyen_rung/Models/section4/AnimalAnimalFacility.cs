@@ -17,14 +17,14 @@ namespace quan_ly_tai_nguyen_rung.Models.section4
         public int AnimalId { get; set; } // Khóa ngoại tới bảng ANIMAL
 
         [ForeignKey("AnimalId")]
-        public Animal Animal { get; set; } // Navigation property tới ANIMAL
+        public virtual Animal Animal { get; set; } // Navigation property tới ANIMAL
 
         [Required]
         [Column("ID_ANIMAL_FACILITY")]
         public int AnimalFacilityId { get; set; } // Khóa ngoại tới bảng ANIMAL_FACILITY
 
         [ForeignKey("AnimalFacilityId")]
-        public AnimalFacility AnimalFacility { get; set; } // Navigation property tới ANIMAL_FACILITY
+        public virtual AnimalFacility AnimalFacility { get; set; } // Navigation property tới ANIMAL_FACILITY
 
     }
 }

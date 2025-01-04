@@ -1,0 +1,63 @@
+﻿@using quan_ly_tai_nguyen_rung.ViewModels
+@model PlantFacilityViewModel
+
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Name">Tên</label>
+        <input asp-for="Name" class="form-control" placeholder="Enter name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Address">Address</label>
+        <input asp-for="Address" class="form-control" placeholder="Address">
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ContactFace">ContactFace</label>
+        <input asp-for="ContactFace" class="form-control" placeholder="ContactFace">
+        <span asp-validation-for="ContactFace" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ContactMail">ContactMail</label>
+        <input asp-for="ContactMail" class="form-control" placeholder="ContactMail">
+        <span asp-validation-for="ContactMail" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ContactPhone">ContactPhone</label>
+        <input asp-for="ContactPhone" class="form-control" placeholder="ContactPhone">
+        <span asp-validation-for="ContactPhone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Labor">Labor</label>
+        <input asp-for="Labor" class="form-control" placeholder="Labor" />
+        <span asp-validation-for="Labor" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Acreage">Acreage</label>
+        <input asp-for="Acreage" class="form-control" placeholder="Acreage">
+        <span asp-validation-for="Acreage" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Status">Trạng thái</label>
+        <select asp-for="Status" class="form-control">
+            <option value="true">Hoạt động</option>
+            <option value="false">Không hoạt động</option>
+            <!-- Thêm các trạng thái khác nếu cần -->
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SeedlingsYield">Seedlings Yield</label>
+        <input asp-for="SeedlingsYield" class="form-control" placeholder="Seedlings Yield">
+        <span asp-validation-for="SeedlingsYield" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CommuneId" class="control-label">Commune</label>
+        <select asp-for="CommuneId" asp-items="ViewBag.Communes" class="form-control">
+            <option value="">-- Select Commune --</option>
+        </select>
+        <span asp-validation-for="CommuneId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

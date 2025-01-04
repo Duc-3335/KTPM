@@ -50,7 +50,7 @@ namespace quan_ly_tai_nguyen_rung.Models.section4
         public string Location { get; set; }
         [Required]
         [Column("IS_ACTIVE")]
-        public bool is_Active { get; set; }
+        public DATA.@enum.Is_active is_Active { get; set; }
         [Required]
         [Column("CURRENT_QUANTITY")]
         public int CurrentQuantity { get; set; }

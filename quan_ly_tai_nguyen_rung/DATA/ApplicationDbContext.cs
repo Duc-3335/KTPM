@@ -5,6 +5,7 @@ using quan_ly_tai_nguyen_rung.Models.section2;
 using quan_ly_tai_nguyen_rung.Models.section3;
 using quan_ly_tai_nguyen_rung.Models.section4;
 
+
 namespace quan_ly_tai_nguyen_rung.DATA
 {
     public class ApplicationDbContext : DbContext
@@ -22,8 +23,9 @@ namespace quan_ly_tai_nguyen_rung.DATA
         public DbSet<RolesGroup> RolesGroups { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<UserGroup> UserGroups { get; set; }
-        public DbSet<PlantFacility> PlantFacilitys { get; set; }
+        public DbSet<PlantFacility> PlantFacilities { get; set; }
         public DbSet<PlantType> PlantTypes { get; set; }
+        public DbSet<PlantTypePlantFacility> plantPlantFacilities { get; set; }
         public DbSet<WoodProcessingFacility> WoodProcessingFacilities { get; set; }
         public DbSet<Animal> Animals { get; set; }
         public DbSet<AnimalFacility> AnimalFacilities { get; set; }

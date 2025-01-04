@@ -1,6 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using quan_ly_tai_nguyen_rung.Models.section2;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using quan_ly_tai_nguyen_rung.Models.section1;
 
 namespace quan_ly_tai_nguyen_rung.Models.section2
 {
@@ -12,54 +12,17 @@ namespace quan_ly_tai_nguyen_rung.Models.section2
         public int Id { get; set; }
 
         [Required]
-        [Column("NAME")]
-        [StringLength(100)]
-        public string Name { get; set; }
+        [Column("PLANT_FACILITY_ID")]
+        public int PlantFacilityID { get; set; }
+
+        [ForeignKey("PlantFacilityId")]
+        public virtual PlantFacility PlantFacility { get; set; } // Mối quan hệ với PlantFacility
 
         [Required]
-        [Column("STATUS")]
-        public bool Status { get; set; } // 0: Off, 1: On
+        [Column("PLANT_TYPE_ID")]
+        public int PlantTypeID { get; set; }
 
-        [Required]
-        [Column("ADDRESS")]
-        [StringLength(255)]
-        public string Address { get; set; }
-
-        [Required]
-        [Column("CONTACT_FACE")]
-        [StringLength(100)]
-        public string ContactFace { get; set; }
-
-        [Required]
-        [Column("CONTACT_MAIL")]
-        [StringLength(100)]
-        public string ContactMail { get; set; }
-
-        [Required]
-        [Column("CONTACT_PHONE")]
-        [StringLength(100)]
-        public string ContactPhone { get; set; }
-
-        [Required]
-        [Column("ACREAGE")]
-        public float Acreage { get; set; }
-
-        [Required]
-        [Column("SEEDLINGS_YIELD")]
-        public float SeedlingsYield { get; set; }
-
-        [Required]
-        [Column("LABOR")]
-        public int Labor { get; set; }
-
-        [Column("IMAGE_LANT_BREEDING_FACILITY")]
-        public byte[] ImagePlantBreedingFacility { get; set; }
-
-        [Required]
-        [Column("ID_COMMUNE")]
-        public int CommuneId { get; set; }
-
-        [ForeignKey("CommuneId")]
-        public Commune Commune { get; set; }
+        [ForeignKey("PlantTypeId")]
+        public virtual PlantType Plant { get; set; } // Mối quan hệ với PlantType
     }
 }

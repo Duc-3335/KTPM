@@ -3,100 +3,92 @@
   "WorkspaceRootPath": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\models\\section4\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:models\\section4\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\controllers\\animalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:controllers\\animalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animal\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animal\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animalanimalfacility\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animalanimalfacility\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\viewmodels\\animalfacilityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:viewmodels\\animalfacilityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\statistic\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\statistic\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\models\\section4\\animalfacility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:models\\section4\\animalfacility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\controllers\\animalfacilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:controllers\\animalfacilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animal\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animal\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\viewmodels\\animalanimalfacilityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:viewmodels\\animalanimalfacilityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\repository\\animalanimalfacilityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:repository\\animalanimalfacilityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\repository\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:repository\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\models\\section4\\animalanimalfacility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:models\\section4\\animalanimalfacility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animalfacility\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animalfacility\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animalanimalfacility\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animalanimalfacility\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animalfacility\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animalfacility\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animalfacility\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animalfacility\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animalfacility\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animalfacility\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animalfacility\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animalfacility\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animalfacility\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animalfacility\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animalfacility\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animalfacility\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animalanimalfacility\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animalanimalfacility\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\controllers\\animalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:controllers\\animalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\statistic\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\statistic\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\repository\\animalfacilityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:repository\\animalfacilityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\controllers\\animalfacilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:controllers\\animalfacilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\controllers\\animalanimalfacilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:controllers\\animalanimalfacilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\repository\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:repository\\animalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animal\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animal\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animalanimalfacility\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animalanimalfacility\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\viewmodels\\animalanimalfacilityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:viewmodels\\animalanimalfacilityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\models\\section4\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:models\\section4\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\viewmodels\\animalfacilityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:viewmodels\\animalfacilityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animal\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animal\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\views\\animalanimalfacility\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\animalanimalfacility\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\interfaces\\ianimalanimalfacilityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -115,10 +107,6 @@
       "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:views\\woodprocessingfacility\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\viewmodels\\animalviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:viewmodels\\animalviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -133,10 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\data\\seed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -167,10 +151,6 @@
       "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:data\\enum\\is_active.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|e:\\ktpm_pj\\quan_ly_tai_nguyen_rung\\models\\section2\\plant_facility _plant_type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{460EDE10-D55F-4C2F-9953-A33F02AD60C9}|quan_ly_tai_nguyen_rung.csproj|solutionrelative:models\\section2\\plant_facility _plant_type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -192,21 +172,22 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 457,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 424,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalFacility\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\AnimalFacility\\Index.cshtml",
               "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalFacility\\Index.cshtml",
               "RelativeToolTip": "Views\\AnimalFacility\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-08T13:23:34.565Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -219,65 +200,78 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\Animal\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Animal\\Create.cshtml",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\Animal\\Create.cshtml",
-              "RelativeToolTip": "Views\\Animal\\Create.cshtml",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAAAfAAAAAAAAAA==",
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalFacility\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnimalFacility\\Delete.cshtml",
+              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalFacility\\Delete.cshtml",
+              "RelativeToolTip": "Views\\AnimalFacility\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T02:38:57.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Animal.cs",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\section4\\Animal.cs",
-              "RelativeDocumentMoniker": "Models\\section4\\Animal.cs",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\section4\\Animal.cs",
-              "RelativeToolTip": "Models\\section4\\Animal.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowC4AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T04:18:55.141Z",
+              "WhenOpened": "2024-12-14T09:24:43.421Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalFacility\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnimalFacility\\Detail.cshtml",
+              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalFacility\\Detail.cshtml",
+              "RelativeToolTip": "Views\\AnimalFacility\\Detail.cshtml",
+              "ViewState": "AgIAALcBAAAAAAAAAAAAAMMBAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-24T03:18:25.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Create.cshtml",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalAnimalFacility\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\AnimalAnimalFacility\\Create.cshtml",
               "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalAnimalFacility\\Create.cshtml",
               "RelativeToolTip": "Views\\AnimalAnimalFacility\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-17T05:24:18.592Z",
+              "WhenOpened": "2024-12-17T05:24:18.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalAnimalFacility\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnimalAnimalFacility\\Index.cshtml",
+              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalAnimalFacility\\Index.cshtml",
+              "RelativeToolTip": "Views\\AnimalAnimalFacility\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T02:38:36.795Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\Animal\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Animal\\Index.cshtml",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\Animal\\Index.cshtml",
-              "RelativeToolTip": "Views\\Animal\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalFacility\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnimalFacility\\Edit.cshtml",
+              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalFacility\\Edit.cshtml",
+              "RelativeToolTip": "Views\\AnimalFacility\\Edit.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAowDYAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T03:47:21.504Z"
+              "WhenOpened": "2024-12-13T00:39:32.727Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AnimalFacility.cs",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\section4\\AnimalFacility.cs",
-              "RelativeDocumentMoniker": "Models\\section4\\AnimalFacility.cs",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\section4\\AnimalFacility.cs",
-              "RelativeToolTip": "Models\\section4\\AnimalFacility.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAIwDAAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:12:19.755Z"
+              "DocumentIndex": 14,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\Animal\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animal\\Create.cshtml",
+              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\Animal\\Create.cshtml",
+              "RelativeToolTip": "Views\\Animal\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T02:38:57.567Z"
             },
             {
               "$type": "Document",
@@ -287,73 +281,25 @@
               "RelativeDocumentMoniker": "Controllers\\AnimalFacilityController.cs",
               "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Controllers\\AnimalFacilityController.cs",
               "RelativeToolTip": "Controllers\\AnimalFacilityController.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAqwJwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAUwGUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T00:20:12.306Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AnimalAnimalFacility.cs",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\section4\\AnimalAnimalFacility.cs",
-              "RelativeDocumentMoniker": "Models\\section4\\AnimalAnimalFacility.cs",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\section4\\AnimalAnimalFacility.cs",
-              "RelativeToolTip": "Models\\section4\\AnimalAnimalFacility.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:23:17.827Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalAnimalFacility\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\AnimalAnimalFacility\\Index.cshtml",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalAnimalFacility\\Index.cshtml",
-              "RelativeToolTip": "Views\\AnimalAnimalFacility\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-17T02:38:36.795Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Detail.cshtml",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalFacility\\Detail.cshtml",
-              "RelativeDocumentMoniker": "Views\\AnimalFacility\\Detail.cshtml",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalFacility\\Detail.cshtml",
-              "RelativeToolTip": "Views\\AnimalFacility\\Detail.cshtml",
-              "ViewState": "AgIAALQBAAAAAAAAAIBJwMMBAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-24T03:18:25.419Z"
+              "Title": "Animal.cs",
+              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\section4\\Animal.cs",
+              "RelativeDocumentMoniker": "Models\\section4\\Animal.cs",
+              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\section4\\Animal.cs",
+              "RelativeToolTip": "Models\\section4\\Animal.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T04:18:55.141Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalFacility\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\AnimalFacility\\Edit.cshtml",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalFacility\\Edit.cshtml",
-              "RelativeToolTip": "Views\\AnimalFacility\\Edit.cshtml",
-              "ViewState": "AgIAACUAAAAAAAAAAAAowDYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T00:39:32.727Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalFacility\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\AnimalFacility\\Delete.cshtml",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\AnimalFacility\\Delete.cshtml",
-              "RelativeToolTip": "Views\\AnimalFacility\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T09:24:43.421Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 26,
               "Title": "AnimalViewModel.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\ViewModels\\AnimalViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AnimalViewModel.cs",
@@ -365,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 31,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\Animal\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Animal\\Edit.cshtml",
@@ -377,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 32,
               "Title": "Commune.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\section1\\Commune.cs",
               "RelativeDocumentMoniker": "Models\\section1\\Commune.cs",
@@ -389,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 33,
               "Title": "20241210025458_new2.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Migrations\\20241210025458_new2.cs",
               "RelativeDocumentMoniker": "Migrations\\20241210025458_new2.cs",
@@ -401,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 34,
               "Title": "ApplicationDbContextModelSnapshot.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Migrations\\ApplicationDbContextModelSnapshot.cs",
@@ -413,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 35,
               "Title": "20241210031026_new3.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Migrations\\20241210031026_new3.cs",
               "RelativeDocumentMoniker": "Migrations\\20241210031026_new3.cs",
@@ -426,38 +372,63 @@
           ]
         },
         {
-          "DockedWidth": 287,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 320,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AnimalController.cs",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Controllers\\AnimalController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AnimalController.cs",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Controllers\\AnimalController.cs",
-              "RelativeToolTip": "Controllers\\AnimalController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAtwDoAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T00:42:41.838Z",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-06T13:43:26.611Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABjAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAYwEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-06T00:46:29.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AnimalFacilityRepository.cs",
+              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Repository\\AnimalFacilityRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\AnimalFacilityRepository.cs",
+              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Repository\\AnimalFacilityRepository.cs",
+              "RelativeToolTip": "Repository\\AnimalFacilityRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC4AAACGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T01:48:19.973Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "AnimalController.cs",
+              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Controllers\\AnimalController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AnimalController.cs",
+              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Controllers\\AnimalController.cs",
+              "RelativeToolTip": "Controllers\\AnimalController.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAswNgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T00:42:41.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\Statistic\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Statistic\\Index.cshtml",
@@ -469,44 +440,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "site.css",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAABQAAAAAAAAAAADwvzQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-03T12:54:26.657Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AnimalFacilityViewModel.cs",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\ViewModels\\AnimalFacilityViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\AnimalFacilityViewModel.cs",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\ViewModels\\AnimalFacilityViewModel.cs",
-              "RelativeToolTip": "ViewModels\\AnimalFacilityViewModel.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAkwCUAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T03:54:54.799Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Statistics.cshtml",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\Animal\\Statistics.cshtml",
-              "RelativeDocumentMoniker": "Views\\Animal\\Statistics.cshtml",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\Animal\\Statistics.cshtml",
-              "RelativeToolTip": "Views\\Animal\\Statistics.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-03T00:51:39.44Z"
+              "Title": "AnimalAnimalFacilityController.cs",
+              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Controllers\\AnimalAnimalFacilityController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AnimalAnimalFacilityController.cs",
+              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Controllers\\AnimalAnimalFacilityController.cs",
+              "RelativeToolTip": "Controllers\\AnimalAnimalFacilityController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T02:39:57.646Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "AnimalRepository.cs",
+              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Repository\\AnimalRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\AnimalRepository.cs",
+              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Repository\\AnimalRepository.cs",
+              "RelativeToolTip": "Repository\\AnimalRepository.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAwwDwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T01:23:03.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T00:15:56.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "AnimalAnimalFacilityViewModel.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\ViewModels\\AnimalAnimalFacilityViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AnimalAnimalFacilityViewModel.cs",
@@ -518,27 +488,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AnimalAnimalFacilityRepository.cs",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Repository\\AnimalAnimalFacilityRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\AnimalAnimalFacilityRepository.cs",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Repository\\AnimalAnimalFacilityRepository.cs",
-              "RelativeToolTip": "Repository\\AnimalAnimalFacilityRepository.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAUwE4AAAAxAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:44:01.42Z"
+              "WhenOpened": "2024-12-06T00:03:24.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AnimalRepository.cs",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Repository\\AnimalRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\AnimalRepository.cs",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Repository\\AnimalRepository.cs",
-              "RelativeToolTip": "Repository\\AnimalRepository.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowBsAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "AnimalFacilityViewModel.cs",
+              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\ViewModels\\AnimalFacilityViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AnimalFacilityViewModel.cs",
+              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\ViewModels\\AnimalFacilityViewModel.cs",
+              "RelativeToolTip": "ViewModels\\AnimalFacilityViewModel.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwCUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T01:23:03.549Z"
+              "WhenOpened": "2024-12-10T03:54:54.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Statistics.cshtml",
+              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\Animal\\Statistics.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animal\\Statistics.cshtml",
+              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\Animal\\Statistics.cshtml",
+              "RelativeToolTip": "Views\\Animal\\Statistics.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-03T00:51:39.44Z"
             },
             {
               "$type": "Document",
@@ -555,30 +537,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "AnimalFacilityRepository.cs",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Repository\\AnimalFacilityRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\AnimalFacilityRepository.cs",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Repository\\AnimalFacilityRepository.cs",
-              "RelativeToolTip": "Repository\\AnimalFacilityRepository.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwC4AAACGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T01:48:19.973Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AnimalAnimalFacilityController.cs",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Controllers\\AnimalAnimalFacilityController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AnimalAnimalFacilityController.cs",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Controllers\\AnimalAnimalFacilityController.cs",
-              "RelativeToolTip": "Controllers\\AnimalAnimalFacilityController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAAwFMAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:39:57.646Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
               "Title": "IAnimalAnimalFacilityRepository.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Interfaces\\IAnimalAnimalFacilityRepository.cs",
               "RelativeDocumentMoniker": "Interfaces\\IAnimalAnimalFacilityRepository.cs",
@@ -590,19 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAYAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T00:03:24.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 25,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Views\\WoodProcessingFacility\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\WoodProcessingFacility\\Index.cshtml",
@@ -614,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 24,
               "Title": "WoodProcessingFacilitiesController.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Controllers\\WoodProcessingFacilitiesController.cs",
               "RelativeDocumentMoniker": "Controllers\\WoodProcessingFacilitiesController.cs",
@@ -626,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 23,
               "Title": "Wood_processing_facility.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\section3\\Wood_processing_facility.cs",
               "RelativeDocumentMoniker": "Models\\section3\\Wood_processing_facility.cs",
@@ -638,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 27,
               "Title": "IAnimalFacilityRepository.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Interfaces\\IAnimalFacilityRepository.cs",
               "RelativeDocumentMoniker": "Interfaces\\IAnimalFacilityRepository.cs",
@@ -650,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 28,
               "Title": "IAnimalRepository.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Interfaces\\IAnimalRepository.cs",
               "RelativeDocumentMoniker": "Interfaces\\IAnimalRepository.cs",
@@ -662,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 29,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\DATA\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "DATA\\ApplicationDbContext.cs",
@@ -674,19 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T00:15:56.783Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 30,
               "Title": "seed.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\DATA\\seed.cs",
               "RelativeDocumentMoniker": "DATA\\seed.cs",
@@ -698,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 36,
               "Title": "Is_active.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\DATA\\enum\\Is_active.cs",
               "RelativeDocumentMoniker": "DATA\\enum\\Is_active.cs",
@@ -710,19 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-06T13:43:26.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 37,
               "Title": "Plant_facility _plant_type.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\section2\\Plant_facility _plant_type.cs",
               "RelativeDocumentMoniker": "Models\\section2\\Plant_facility _plant_type.cs",
@@ -734,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 39,
               "Title": "Plant_type.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\section2\\Plant_type.cs",
               "RelativeDocumentMoniker": "Models\\section2\\Plant_type.cs",
@@ -746,7 +668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 38,
               "Title": "Plant_facility.cs",
               "DocumentMoniker": "E:\\KTPM_PJ\\quan_ly_tai_nguyen_rung\\Models\\section2\\Plant_facility.cs",
               "RelativeDocumentMoniker": "Models\\section2\\Plant_facility.cs",
@@ -758,7 +680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 40,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Documents\\Zalo Received Files\\Program.cs",
               "ToolTip": "C:\\Users\\ACER\\Documents\\Zalo Received Files\\Program.cs",

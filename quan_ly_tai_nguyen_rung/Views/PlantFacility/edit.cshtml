@@ -1,0 +1,84 @@
+﻿@using quan_ly_tai_nguyen_rung.ViewModels
+@model PlantFacilityViewModel
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h2>Edit Plant Facility</h2>
+
+<form method="post" asp-action="Edit" enctype="multipart/form-data">
+    <input type="hidden" asp-for="CommuneId" />
+
+    <div class="form-group">
+        <label asp-for="Name">Tên</label>
+        <input asp-for="Name" class="form-control" placeholder="Enter name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Status">Trạng thái</label>
+        <select asp-for="Status" class="form-control">
+            <option value="true">Hoạt động</option>
+            <option value="false">Không hoạt động</option>
+            <!-- Thêm các trạng thái khác nếu cần -->
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Address">Địa chỉ</label>
+        <input asp-for="Address" class="form-control" placeholder="Enter address">
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ContactFace">Người liên hệ</label>
+        <input asp-for="ContactFace" class="form-control" placeholder="Enter contact face">
+        <span asp-validation-for="ContactFace" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ContactMail">Email liên hệ</label>
+        <input asp-for="ContactMail" class="form-control" placeholder="Enter contact email">
+        <span asp-validation-for="ContactMail" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ContactPhone">Số điện thoại</label>
+        <input asp-for="ContactPhone" class="form-control" placeholder="Enter contact phone">
+        <span asp-validation-for="ContactPhone" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Labor">Số nhân công</label>
+        <input asp-for="Labor" class="form-control" placeholder="Enter number of labor">
+        <span asp-validation-for="Labor" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Acreage">Diện tích</label>
+        <input asp-for="Acreage" class="form-control" placeholder="Enter acreage">
+        <span asp-validation-for="Acreage" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SeedlingsYield">Sản lượng giống</label>
+        <input asp-for="SeedlingsYield" class="form-control" placeholder="Enter seedlings yield">
+        <span asp-validation-for="SeedlingsYield" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CommuneId" class="control-label">Xã</label>
+        <select asp-for="CommuneId" asp-items="ViewBag.Communes" class="form-control">
+            <option value="">-- Chọn xã --</option>
+        </select>
+        <span asp-validation-for="CommuneId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+</form>
+
+

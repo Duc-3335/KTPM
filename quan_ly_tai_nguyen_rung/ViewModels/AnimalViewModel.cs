@@ -1,16 +1,12 @@
 ﻿using quan_ly_tai_nguyen_rung.Models.section4;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using quan_ly_tai_nguyen_rung.DATA.@enum;
-using Microsoft.EntityFrameworkCore.Metadata.Conventions;
-using quan_ly_tai_nguyen_rung.Models.section1;
 
 namespace quan_ly_tai_nguyen_rung.ViewModels
 {
     public class AnimalViewModel
     {
-
         public int Id { get; set; }
 
         [Required]
@@ -46,11 +42,14 @@ namespace quan_ly_tai_nguyen_rung.ViewModels
         public string Location { get; set; }
 
         [Required]
-        public bool IsActive { get; set; } // Giữ nguyên kiểu bool
+        public DATA.@enum.Is_active IsActive { get; set; } // Đổi từ bool sang kiểu enum
 
         [Required]
         public int CurrentQuantity { get; set; }
-        
 
+        // Các thuộc tính cho dropdown
+        public IEnumerable<SelectListItem> GenericOptions { get; set; } // Lựa chọn cho Generic
+        public IEnumerable<SelectListItem> StatusOptions { get; set; } // Lựa chọn cho Status
+        public IEnumerable<SelectListItem> IsActiveOptions { get; set; } // Lựa chọn cho IsActive
     }
 }

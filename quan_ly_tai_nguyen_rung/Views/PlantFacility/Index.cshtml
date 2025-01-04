@@ -1,0 +1,44 @@
+﻿@model IEnumerable<quan_ly_tai_nguyen_rung.Models.section2.PlantFacility>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+        @using (Html.BeginForm("SearchByName", "PlantFacility", FormMethod.Get))
+        {
+            <div class="row">
+                <div class="col-md-8">
+                    <input type="text" name="name" class="form-control" placeholder="Nhập tên cơ sở cần tìm " value="@ViewContext.HttpContext.Request.Query["name"]" />
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+                </div>
+            </div>
+        }
+        <a type="btn btn-success" asp-controller="PlantFacility" asp-action="Create" class="btn btn-sm btn-success mb-3">Create</a>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            @foreach (var item in Model)
+            {
+                <div class="col">
+                    <div class="card shadow-sm">
+                        @* <img class="card-img-top" src=@ width:100% height="225" alt="card image cap" /> *@
+                        <div class="card-body">
+                            <p class="card-text">@item.Name</p>
+                            <p class="card-text">this animal live in @item.Acreage</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a type="btn btn-success" asp-controller="PlantFacility" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">View</a>
+                                    <a type="btn btn-success" asp-controller="PlantFacility" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                    <a type="btn btn-success" asp-controller="PlantFacility" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Delete</a>
+
+                                </div>
+                                <small class="text-body-secondary">@item.Address</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
