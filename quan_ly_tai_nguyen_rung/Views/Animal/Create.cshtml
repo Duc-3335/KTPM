@@ -1,5 +1,4 @@
-﻿
-@using quan_ly_tai_nguyen_rung.ViewModels
+﻿@using quan_ly_tai_nguyen_rung.ViewModel.section4
 @model AnimalViewModel
 
 @*
@@ -13,73 +12,56 @@
         <input asp-for="Name" class="form-control" placeholder="Enter name">
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
+
     <div class="form-group">
-        <label asp-for="Generic">Loài</label>
-        <select asp-for="Generic" asp-items="@Html.GetEnumSelectList<quan_ly_tai_nguyen_rung.DATA.@enum.generic>()" class="form-control form-control-lg">
-            <option>--Select__</option>
+        <label asp-for="Generic">Chủng loại</label>
+        <select asp-for="Generic" asp-items="@Html.GetEnumSelectList<quan_ly_tai_nguyen_rung.DATA.@enum.generic>()" class="form-control">
+            <option value="">--Chọn loại--</option>
         </select>
         <span asp-validation-for="Generic" class="text-danger"></span>
     </div>
+
     <div class="form-group">
-        <label asp-for="DateFound">Date found</label>
-        <input asp-for="DateFound" class="form-control" placeholder="Date Found">
+        <label asp-for="DateFound">Ngày tìm thấy</label>
+        <input asp-for="DateFound" type="date" class="form-control" placeholder="Enter date found">
         <span asp-validation-for="DateFound" class="text-danger"></span>
     </div>
+
     <div class="form-group">
-        <label asp-for="PreviousQuantity">Previous Quantity</label>
-        <input asp-for="PreviousQuantity" class="form-control" placeholder="Previous Quantity">
+        <label asp-for="PreviousQuantity">Số lượng trước đó</label>
+        <input asp-for="PreviousQuantity" type="number" class="form-control" placeholder="Enter previous quantity">
         <span asp-validation-for="PreviousQuantity" class="text-danger"></span>
     </div>
+
     <div class="form-group">
-        <label asp-for="Status">Status</label>
-        <select asp-for="Status" asp-items="@Html.GetEnumSelectList<quan_ly_tai_nguyen_rung.DATA.@enum.status>()" class="form-control form-control-lg">
-            <option>--Select__</option>
+        <label asp-for="Status">Trạng thái</label>
+        <select asp-for="Status" asp-items="@Html.GetEnumSelectList<quan_ly_tai_nguyen_rung.DATA.@enum.status>()" class="form-control">
+            <option value="">--Chọn trạng thái--</option>
         </select>
         <span asp-validation-for="Status" class="text-danger"></span>
     </div>
+
     <div class="form-group">
-        <label asp-for="Fluctuation">Fluctuation</label>
-        <select asp-for="Fluctuation" class="form-control form-control-lg">
-            <option value="">--Select--</option>
-            <option value="true">ChuKi</option>
-            <option value="false">KhongTheoChuki</option>
+        <label asp-for="HasFluctuation">Có biến động</label>
+        <select asp-for="HasFluctuation" class="form-control">
+            <option value="">--Chọn--</option>
+            <option value="true">Có</option>
+            <option value="false">Không</option>
         </select>
-        <span asp-validation-for="Fluctuation" class="text-danger"></span>
+        <span asp-validation-for="HasFluctuation" class="text-danger"></span>
     </div>
+
     <div class="form-group">
-        <label asp-for="Date">Date</label>
-        <input asp-for="Date" class="form-control" placeholder="Date">
-        <span asp-validation-for="Date" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Reason">Reason</label>
-        <input asp-for="Reason" class="form-control" placeholder="Reason" />
-        <span asp-validation-for="Reason" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Location">Location</label>
-        <input asp-for="Location" class="form-control" placeholder="Location">
-        <span asp-validation-for="Location" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="IsActive">Is_active</label>
-        <select asp-for="IsActive" class="form-control form-control-lg">
-            <option value="">--Select--</option>
-            <option value="true">Giam</option>
-            <option value="false">Tang</option>
-        </select>
-        <span asp-validation-for="IsActive" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="CurrentQuantity">CurrentQuantity</label>
-        <input asp-for="CurrentQuantity" class="form-control" placeholder="is active">
+        <label asp-for="CurrentQuantity">Số lượng hiện tại</label>
+        <input asp-for="CurrentQuantity" type="number" class="form-control" placeholder="Enter current quantity">
         <span asp-validation-for="CurrentQuantity" class="text-danger"></span>
     </div>
-    @* <div class="form-group">
-        <label asp-for="AnimalFacilityId" class="control-label">Facility</label>
-        <select asp-for="AnimalFacilityId" class="form-control" asp-items="ViewBag.AnimalFacilities"></select>
+
+    <div class="form-group">
+        <label asp-for="AnimalFacilityId">Cơ sở động vật</label>
+        <input asp-for="AnimalFacilityId" type="number" class="form-control" placeholder="Enter facility ID">
         <span asp-validation-for="AnimalFacilityId" class="text-danger"></span>
-    </div> *@
-    
-    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lưu</button>
 </form>

@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using quan_ly_tai_nguyen_rung.Models.section1;
+using quan_ly_tai_nguyen_rung.Models.section2;
 
 namespace quan_ly_tai_nguyen_rung.Models.section2
 {
@@ -45,15 +46,12 @@ namespace quan_ly_tai_nguyen_rung.Models.section2
         public float Acreage { get; set; }
 
         [Required]
-        [Column("SEEDLINGS_YIELD")]
-        public float SeedlingsYield { get; set; }
-
-        [Required]
         [Column("LABOR")]
         public int Labor { get; set; }
 
-        [Column("IMAGE_LANT_BREEDING_FACILITY")]
-        public byte[] ImagePlantBreedingFacility { get; set; }
+        [Column("IMAGE_PLANT_BREEDING_FACILITY")]
+        [StringLength(255)]
+        public string? ImagePlantBreedingFacility { get; set; }
 
         [Required]
         [Column("ID_COMMUNE")]

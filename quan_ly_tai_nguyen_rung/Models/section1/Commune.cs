@@ -22,6 +22,6 @@ namespace quan_ly_tai_nguyen_rung.Models.section1
 
         [ForeignKey("DistrictId")]
         public District District { get; set; }
-        public ICollection<AnimalFacility> AnimalFacilities { get; set; } // Navigation Property
+        public ICollection<AnimalFacility> AnimalFacilities { get; set; } 
     }
 }

@@ -14,7 +14,13 @@ namespace quan_ly_tai_nguyen_rung.Models.section1
         [Column("NAME")]
         [StringLength(100)]
         public string Name { get; set; }
+        [Required]
+        [Column("ID_CENTRAL")]
+        public int CentralId { get; set; }
 
-        public ICollection<Commune> Communes { get; set; }
+        [ForeignKey("CentralId")]
+        public Central Central { get; set; }
+
+        public ICollection<Commune> Communes { get; set; } = new List<Commune>();
     }
 }

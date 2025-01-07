@@ -48,12 +48,9 @@ namespace quan_ly_tai_nguyen_rung.Models.section3
         [Column("ACREAGE")]
         public double Acreage { get; set; } // DIỆN TÍCH HECTA
 
-        [Column("Yield")]
-        public double? Yield { get; set; } // SẢN LƯỢNG TẤN / NĂM
-
         [StringLength(500)]
         [Column("WOOD_SPECIES_PROVIDED")]
-        public string? WoodSpeciesProvided { get; set; } // LOẠI GỖ ĐẦU VÀO 
+        public string WoodSpeciesProvided { get; set; } // LOẠI GỖ ĐẦU VÀO 
 
         [Required]
         [StringLength(300)]
@@ -71,7 +68,7 @@ namespace quan_ly_tai_nguyen_rung.Models.section3
         public DATA.@enum.activity_form ActivityForm { get; set; } // hình thức hoạt động
 
         [Column("IMAGE_WOOD_PROCESSING_FACILITY")]
-        public byte[] ImageWoodProcessingFacility { get; set; } // bản đồ cơ sở CHẾ BIẾN GỖ 
+        public string? ImageWoodProcessingFacility { get; set; } // bản đồ cơ sở CHẾ BIẾN GỖ 
 
         [Required]
         [Column("ID_COMMUNE")]

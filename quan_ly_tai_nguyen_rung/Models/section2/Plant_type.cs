@@ -1,31 +1,38 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using quan_ly_tai_nguyen_rung.DATA.@enum;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace quan_ly_tai_nguyen_rung.Models.section2
 {
-    [Table("PLANT_TYPE")] // Mapping đến bảng PLANT_VARIETY_TYPE trong cơ sở dữ liệu
-    public class PlantType
+    [Table("PLANT")]
+    public class Plant
     {
         [Key]
-        public int ID { get; set; }
+        [Column("ID")]
+        public int Id { get; set; }
 
         [Required]
+        [Column("NAME")]
         [StringLength(100)]
-        public string NAME { get; set; }
+        public string Name { get; set; } // Tên giống cây
 
         [Required]
-        public DATA.@enum.type_plant TYPE { get; set; } // Loại giống cây
+        [Column("TYPE")]
+        public DATA.@enum.type_plant Type { get; set; } // Loại giống cây
 
         [Required]
-        public int PRICE { get; set; } // Giá
+        [Column("PRICE")]
+        public int Price { get; set; } // Giá bán (VNĐ)
 
         [Required]
-        public int HEIGHT { get; set; } // Chiều cao cây giống
+        [Column("HEIGHT")]
+        public int Height { get; set; } // Chiều cao cây giống (cm)
 
-        [ForeignKey("PlantFacilityId")] // Chỉ định rằng ID_PLANT_BREEDING_FACILITY là khóa ngoại đến bảng PLANT_BREEDING_FACILITY
-        public int PlantFacilityId { get; set; }
+        [Required]
+        [Column("ID_PLANT_FACILITY")]
+        public int PlantFacilityId { get; set; } // ID của cơ sở sản xuất giống cây trồng
 
-        // Navigation property
-        public virtual PlantFacility PlantFacility { get; set; } // Tham chiếu đến bảng PLANT_BREEDING_FACILITY
+        [ForeignKey("PlantFacilityId")]
+        public PlantFacility PlantFacility { get; set; } // Quan hệ với bảng PlantFacility
     }
 }

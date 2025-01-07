@@ -1,5 +1,4 @@
-﻿using quan_ly_tai_nguyen_rung.DATA.@enum;
-using System;
+﻿using quan_ly_tai_nguyen_rung.Models.section4;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -19,42 +18,34 @@ namespace quan_ly_tai_nguyen_rung.Models.section4
 
         [Required]
         [Column("GENERIC")]
-        public DATA.@enum.generic Generic { get; set; } // Đảm bảo Generic đã được định nghĩa trong DATA namespace
+        public DATA.@enum.generic Generic { get; set; } // CHỦNG LOẠI
 
         [Required]
         [Column("DATE_FOUND")]
-        [DataType(DataType.Date)]
-        public DateTime DateFound { get; set; }
+        public DateTime DateFound { get; set; } // NGÀY TÌM THẤY 
 
         [Required]
         [Column("PREVIOUS_QUANTITY")]
-        public int PreviousQuantity { get; set; } // số lượng 
+        public int PreviousQuantity { get; set; } // SỐ LƯỢNG CÁ THỂ
 
         [Required]
         [Column("STATUS")]
-        public DATA.@enum.status Status { get; set; } // Đảm bảo Status đã được định nghĩa trong DATA namespace
+        public DATA.@enum.status Status { get; set; } // TRẠNG THÁI BẢO TỒN
 
         [Required]
-        [Column("FLUCTUATION")]
-        public bool Fluctuation { get; set; } // biến động
-        [Required]
-        [Column("DATE")]
-        [DataType(DataType.Date)]
-        public DateTime Date { get; set; } // Ngày biến động
-        [Required]
-        [Column("REASON", TypeName = "TEXT")]
-        public string Reason { get; set; } // Lý do biến động
-        [StringLength(255)]
-        [Required]
-        [Column("LOCATION")]
-        public string Location { get; set; }
-        [Required]
-        [Column("IS_ACTIVE")]
-        public bool is_Active { get; set; }
+        [Column("HAS_FLUCTUATION")]
+        public bool HasFluctuation { get; set; } // có biến động hay không
+
         [Required]
         [Column("CURRENT_QUANTITY")]
-        public int CurrentQuantity { get; set; }
-        public ICollection<AnimalAnimalFacility> animalAnimalFacilities { get; set; }
+        public int CurrentQuantity { get; set; } // SỐ LƯỢNG HIỆN TẠI
 
+        [Required]
+        [Column("ID_ANIMAL_FACILITY")]
+        public int AnimalFacilityId { get; set; }
+
+        // Navigation property
+        [ForeignKey("IdAnimalFacility")]
+        public virtual AnimalFacility AnimalFacility { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using quan_ly_tai_nguyen_rung.DATA.@enum;
+using quan_ly_tai_nguyen_rung.Models;
 using quan_ly_tai_nguyen_rung.Models.section1;
 using quan_ly_tai_nguyen_rung.Models.section2;
 using quan_ly_tai_nguyen_rung.Models.section3;
@@ -9,10 +10,13 @@ namespace quan_ly_tai_nguyen_rung.DATA
 {
     public class ApplicationDbContext : DbContext
     {
+        internal IEnumerable<object> animalAnimalFacilities;
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
 
+        public DbSet<Central> Centrals { get; set; }
         public DbSet<District> Districts { get; set; }
         public DbSet<Commune> Communes { get; set; }
         public DbSet<AccessHistory> AccessHistories { get; set; }
@@ -22,26 +26,29 @@ namespace quan_ly_tai_nguyen_rung.DATA
         public DbSet<RolesGroup> RolesGroups { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<UserGroup> UserGroups { get; set; }
-        public DbSet<PlantFacility> PlantFacilitys { get; set; }
-        public DbSet<PlantType> PlantTypes { get; set; }
+        public DbSet<PlantFacility> PlantFacilities { get; set; }
+        public DbSet<Plant> Plants { get; set; }
+        public DbSet<PlantFacilityYield> PlantFacilityYields { get; set; }
+        //public DbSet<AnimalStatistics> AnimalStatistics { get; set; }
         public DbSet<WoodProcessingFacility> WoodProcessingFacilities { get; set; }
+        public DbSet<WoodProcessingStatistics> WoodProcessingStatistics { get; set; }
         public DbSet<Animal> Animals { get; set; }
         public DbSet<AnimalFacility> AnimalFacilities { get; set; }
-        public DbSet<AnimalAnimalFacility> animalAnimalFacilities { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<AnimalAnimalFacility>()
-                .HasOne(aaf => aaf.AnimalFacility)
-                .WithMany(af => af.animalAnimalFacilities)
-                .HasForeignKey(aaf => aaf.AnimalFacilityId)
-                .OnDelete(DeleteBehavior.Cascade); // Xóa bản ghi liên quan tự động
+        public DbSet<Fluctuation> Fluctuations { get; set; }
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<AnimalAnimalFacility>()
+        //        .HasOne(aaf => aaf.AnimalFacility)
+        //        .WithMany(af => af.animalAnimalFacilities)
+        //        .HasForeignKey(aaf => aaf.AnimalFacilityId)
+        //        .OnDelete(DeleteBehavior.Cascade); // Xóa bản ghi liên quan tự động
 
-            modelBuilder.Entity<AnimalAnimalFacility>()
-                .HasOne(aaf => aaf.Animal)
-                .WithMany(a => a.animalAnimalFacilities)
-                .HasForeignKey(aaf => aaf.AnimalId)
-                .OnDelete(DeleteBehavior.Restrict); // Hạn chế xóa Animal nếu còn liên kết
-        }
+        //    modelBuilder.Entity<AnimalAnimalFacility>()
+        //        .HasOne(aaf => aaf.Animal)
+        //        .WithMany(a => a.animalAnimalFacilities)
+        //        .HasForeignKey(aaf => aaf.AnimalId)
+        //        .OnDelete(DeleteBehavior.Restrict); // Hạn chế xóa Animal nếu còn liên kết
+        //}
 
     }
 }

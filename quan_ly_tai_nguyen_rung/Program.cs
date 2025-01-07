@@ -11,7 +11,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IAnimalRepository, AnimalRepository>();
 builder.Services.AddScoped<IAnimalFacilityRepository, AnimalFacilityRepository>();
-builder.Services.AddScoped<IAnimalAnimalFacilityRepository, AnimalAnimalFacilityRepository>();
+builder.Services.AddScoped<IFluctuationRepository, FluctuationRepository>();
+builder.Services.AddScoped<IPlantFacilityRepository, PlantFacilityRepository>();
+builder.Services.AddScoped <IPlantFacilityYieldRepository, PlantFacilityYieldRepository>();
+builder.Services.AddScoped<IPlantRepository, PlantRepository>();
+
+//builder.Services.AddScoped<IAnimalStatisticsRepository, AnimalStatisticRepository>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")); // lâ?y Connection String cu?a database
