@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\quan_ly_tai_nguyen_rung.props" />
-</Project>
