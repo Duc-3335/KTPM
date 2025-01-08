@@ -38,9 +38,9 @@ namespace quan_ly_tai_nguyen_rung.ViewModels
         public int Labor { get; set; } 
 
         [Required(ErrorMessage = "Diện tích là bắt buộc.")]
-        public float Acreage { get; set; } 
+        public double Acreage { get; set; } 
 
-        public string ImagePlantBreedingFacility { get; set; }
+        public string? ImagePlantBreedingFacility { get; set; }
 
         [Required]
         public int CommuneId { get; set; } // Lưu giá trị commune được chọn từ dropdown

@@ -43,7 +43,7 @@ namespace quan_ly_tai_nguyen_rung.Models.section2
 
         [Required]
         [Column("ACREAGE")]
-        public float Acreage { get; set; }
+        public double Acreage { get; set; }
 
         [Required]
         [Column("LABOR")]
