@@ -1,67 +1,54 @@
-﻿@model IEnumerable<quan_ly_tai_nguyen_rung.ViewModel.section4.AnimalViewModel>
+﻿@model IEnumerable<quan_ly_tai_nguyen_rung.Models.section4.AnimalFacility>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
 @{
-    ViewData["Title"] = "Animal Facility Index";
 }
-
-<div class="container mt-4">
-    <h2>Danh sách động vật</h2>
-    @using (Html.BeginForm("SearchByName", "AnimalFacility", FormMethod.Get))
-    {
-        <div class="row mb-3">
-            <div class="col-md-8">
-                <input type="text" name="name" class="form-control" placeholder="Nhập tên động vật" value="@ViewContext.HttpContext.Request.Query["name"]" />
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+        @using (Html.BeginForm("SearchByName", "AnimalFacility", FormMethod.Get))
+        {
+            <div class="row mb-3">
+                <div class="col-md-8">
+                    <input type="text" name="name" class="form-control" placeholder="Nhập tên cơ sở lưu trữ" value="@ViewContext.HttpContext.Request.Query["name"]" />
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+                </div>
             </div>
-            <div class="col-md-4">
-                <button type="submit" class="btn btn-primary">Tìm kiếm</button>
-            </div>
-        </div>
-    }
-    <a asp-controller="AnimalFacility" asp-action="Create" class="btn btn-success mb-3">Thêm động vật</a>
+        }
+        <a asp-controller="AnimalFacility" asp-action="Create" class="btn btn-success mb-3">Create</a>
 
-    <table class="table table-bordered table-striped">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Tên</th>
-                <th>Chủng loại</th>
-                <th>Ngày tìm thấy</th>
-                <th>Số lượng ban đầu</th>
-                <th>Số lượng hiện tại</th>
-                <th>Trạng thái</th>
-                <th>Biến động</th>
-                <th>Hành động</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model != null && Model.Any())
-            {
-                int index = 1;
-                foreach (var item in Model)
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tên cơ sở</th>
+                    <th>Diện tích</th>
+                    <th>Địa chỉ</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
                 {
                     <tr>
-                        <td>@index</td>
+                        <td>@item.Id</td>
                         <td>@item.Name</td>
-                        <td>@item.Generic</td>
-                        <td>@item.DateFound.ToString("dd/MM/yyyy")</td>
-                        <td>@item.PreviousQuantity</td>
-                        <td>@item.CurrentQuantity</td>
-                        <td>@item.Status</td>
-                        <td>@(item.HasFluctuation ? "Có" : "Không")</td>
+                        <td>@item.Acreage</td>
+                        <td>@item.Address</td>
                         <td>
-                            <a asp-controller="AnimalFacility" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-sm btn-info">Xem</a>
-                            <a asp-controller="AnimalFacility" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Sửa</a>
-                            <a asp-controller="AnimalFacility" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Xóa</a>
+                            <div class="btn-group">
+                                <a asp-controller="AnimalFacility" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">View</a>
+                                <a asp-controller="AnimalFacility" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                <a asp-controller="AnimalFacility" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Delete</a>
+                                <a asp-controller="Animal" asp-action="Index" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Animal</a>
+                            </div>
                         </td>
                     </tr>
-                    index++;
                 }
-            }
-            else
-            {
-                <tr>
-                    <td colspan="9" class="text-center">Không có dữ liệu</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
 </div>

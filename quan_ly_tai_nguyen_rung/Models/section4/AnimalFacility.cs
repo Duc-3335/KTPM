@@ -41,7 +41,7 @@ namespace quan_ly_tai_nguyen_rung.Models.section4
 
         [Required]
         [Column("ACREAGE")]
-        public float Acreage { get; set; } // DIỆN TÍCH 
+        public double Acreage { get; set; } // DIỆN TÍCH 
 
         [StringLength(200)]
         [Column("IMAGE_ANIMAL_STORAGE")]

@@ -45,7 +45,7 @@ namespace quan_ly_tai_nguyen_rung.Models.section4
         public int AnimalFacilityId { get; set; }
 
         // Navigation property
-        [ForeignKey("IdAnimalFacility")]
+        [ForeignKey("AnimalFacilityId")]
         public virtual AnimalFacility AnimalFacility { get; set; }
     }
 }

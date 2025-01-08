@@ -109,6 +109,7 @@ namespace quan_ly_tai_nguyen_rung.Controllers
                 Status = animalViewModel.Status,
                 HasFluctuation = animalViewModel.HasFluctuation,
                 CurrentQuantity = animalViewModel.CurrentQuantity,
+                AnimalFacilityId = animalViewModel.AnimalFacilityId
             };
 
             _animalRepository.Add(newAnimal);

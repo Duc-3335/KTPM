@@ -1,0 +1,44 @@
+﻿@model IEnumerable<quan_ly_tai_nguyen_rung.Models.section2.Plant>
+
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+        @using (Html.BeginForm("Index", "Plant", FormMethod.Get))
+        {
+            <div class="row">
+                <div class="col-md-8">
+                    <input type="text" name="name" class="form-control" placeholder="Nhập tên cây" value="@ViewContext.HttpContext.Request.Query["name"]" />
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+                </div>
+            </div>
+        }
+
+        <a asp-controller="Plant" asp-action="Create" class="btn btn-sm btn-success mb-3">Create New Plant</a>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            @foreach (var item in Model)
+            {
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text"><strong>Name:</strong> @item.Name</p>
+                            <p class="card-text"><strong>Type:</strong> @item.Type</p>
+                            <p class="card-text"><strong>Price:</strong> @item.Price.ToString("C0")</p>
+                            <p class="card-text"><strong>Height:</strong> @item.Height cm</p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a asp-controller="Plant" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">View</a>
+                                    <a asp-controller="Plant" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                    <a asp-controller="Plant" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Delete</a>
+                                </div>
+                                <small class="text-body-secondary">Created on: @item.PlantFacility?.Name</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -50,6 +50,10 @@
         </select>
         <span asp-validation-for="CommuneId" class="text-danger"></span>
     </div>
-
+    <div class="form-group">
+        <label asp-for="ImageAnimalStorage">Ảnh cơ sở động vật</label>
+        <input asp-for="ImageAnimalStorage" type="file" class="form-control" />
+        <span asp-validation-for="ImageAnimalStorage" class="text-danger"></span>
+    </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
