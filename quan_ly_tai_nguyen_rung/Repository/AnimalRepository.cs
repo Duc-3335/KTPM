@@ -41,7 +41,7 @@ namespace quan_ly_tai_nguyen_rung.Repository
         public async Task<IEnumerable<Animal>> GetAllOfFacility(int facilityId)
         {
             return await _context.Animals
-                .Include(i => i.AnimalFacility)
+                
                 .Where(a => a.AnimalFacilityId == facilityId)
                 .ToListAsync();
         }

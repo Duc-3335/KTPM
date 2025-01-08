@@ -25,9 +25,9 @@ namespace quan_ly_tai_nguyen_rung.Controllers
         }
 
         // GET: Animal
-        public async Task<IActionResult> Index(int facilityId)
+        public async Task<IActionResult> Index(int id)
         {
-            var animals = await _animalRepository.GetAllOfFacility(facilityId);
+            var animals = await _animalRepository.GetAllOfFacility(id);
             return View(animals);
         }
 

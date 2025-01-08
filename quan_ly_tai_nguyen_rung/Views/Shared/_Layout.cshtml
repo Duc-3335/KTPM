@@ -36,13 +36,28 @@
                             Tài nguyên sinh vật
                         </a>
                         <ul class="collapse list-unstyled ms-3" id="bioResourcesSubmenu">
-                            <li class="nav-item">
+                            @* <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Animal" asp-action="Index">Động vật</a>
-                            </li>
+                            </li> *@
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="AnimalFacility" asp-action="Index">Cơ sở lưu trữ động vật</a>
                             </li>
                             
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Animal" asp-action="Statistics">Thống kê</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="bioResourcesDropdown" data-bs-toggle="collapse" data-bs-target="#bioResourcesSubmenu" aria-expanded="false" aria-controls="bioResourcesSubmenu">
+                            Tài nguyên thực vật
+                        </a>
+                        <ul class="collapse list-unstyled ms-3" id="bioResourcesSubmenu">
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="PlantFacility" asp-action="Index">Cơ sở lưu trữ thực vật</a>
+                            </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Animal" asp-action="Statistics">Thống kê</a>
                             </li>

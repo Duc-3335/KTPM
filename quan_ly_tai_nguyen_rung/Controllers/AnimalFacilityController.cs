@@ -158,5 +158,16 @@ namespace quan_ly_tai_nguyen_rung.Controllers
             _animalFacilityRepository.Delete(facility);
             return RedirectToAction("Index");
         }
+        public async Task<IActionResult> ShowAnimals(int id)
+        {
+            //var facility = await _animalFacilityRepository.GetIdByAsync(id);
+            //if (facility == null)
+            //{
+            //    ViewData["ErrorMessage"] = "Cơ sở không tồn tại.";
+            //    return RedirectToAction("Index");
+            //}
+
+            return RedirectToAction("Index", "Animal", new { facilityId = id });
+        }
     }
 }

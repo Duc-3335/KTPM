@@ -1,0 +1,51 @@
+﻿@model IEnumerable<quan_ly_tai_nguyen_rung.Models.section2.PlantFacility>
+
+@{
+    ViewBag.Title = "Danh sách Cơ sở thực vật";
+}
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+        @using (Html.BeginForm("SearchByName", "PlantFacility", FormMethod.Get))
+        {
+            <div class="row mb-3">
+                <div class="col-md-8">
+                    <input type="text" name="name" class="form-control" placeholder="Nhập tên cơ sở thực vật" value="@ViewContext.HttpContext.Request.Query["name"]" />
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+                </div>
+            </div>
+        }
+        <a asp-controller="PlantFacility" asp-action="Create" class="btn btn-success mb-3">Tạo mới</a>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tên cơ sở</th>
+                    <th>Diện tích</th>
+                    <th>Địa chỉ</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Acreage</td>
+                        <td>@item.Address</td>
+                        <td>
+                            <div class="btn-group">
+                                <a asp-controller="PlantFacility" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Xem</a>
+                                <a asp-controller="PlantFacility" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Chỉnh sửa</a>
+                                <a asp-controller="PlantFacility" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Xóa</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
