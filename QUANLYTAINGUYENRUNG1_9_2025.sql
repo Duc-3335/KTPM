@@ -124,7 +124,7 @@ GO
 CREATE TABLE PLANT (
     ID INT IDENTITY(1,1) PRIMARY KEY,
     NAME NVARCHAR(100) NOT NULL, -- Tên giống cây
-    TYPE NVARCHAR(100) NOT NULL, -- Loại giống cây (Ví dụ: cây ăn quả, cây công nghiệp)
+    TYPE int NOT NULL, -- Loại giống cây (Ví dụ: cây ăn quả, cây công nghiệp)
     PRICE INT NOT NULL, -- Giá bán (VNĐ)
     HEIGHT INT NOT NULL, -- Chiều cao cây giống (cm)
 	ID_PLANT_FACILITY INT NOT NULL,
@@ -200,7 +200,7 @@ CREATE TABLE ANIMAL (
     GENERIC INT NOT NULL, -- CHỦNG LOẠI
     DATE_FOUND DATE NOT NULL, -- NGÀY TÌM THẤY 
     PREVIOUS_QUANTITY INT NOT NULL, -- SỐ LƯỢNG CÁ THỂ
-    STATUS NVARCHAR(250) NOT NULL, -- TRẠNG THÁI BẢO TỒN ( NGUY CẤP , ỔN ĐỊNH ,...) 
+    STATUS int NOT NULL, -- TRẠNG THÁI BẢO TỒN ( NGUY CẤP , ỔN ĐỊNH ,...) 
     HAS_FLUCTUATION BIT NOT NULL DEFAULT 0, -- 0: không có biến động, 1: có biến động
     CURRENT_QUANTITY INT NOT NULL, -- SỐ LƯỢNG HIỆN TẠI
     ID_ANIMAL_FACILITY INT NOT NULL,
