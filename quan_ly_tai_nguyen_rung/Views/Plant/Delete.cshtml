@@ -1,0 +1,44 @@
+﻿@model quan_ly_tai_nguyen_rung.Models.section2.Plant
+
+@{
+    ViewData["Title"] = "Xác nhận xóa cây giống";
+}
+
+<h1>Xác nhận xóa cây giống</h1>
+<p>Bạn có chắc chắn muốn xóa thông tin cây giống này không?</p>
+
+<form method="post" asp-action="Delete">
+    <input type="hidden" name="facilityId" value="@ViewBag.FacilityId" />
+
+    <div class="form-group">
+        <label asp-for="Name">Tên cây giống</label>
+        <input asp-for="Name" class="form-control" readonly />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Type">Loại cây giống</label>
+        <input asp-for="Type" class="form-control" readonly />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Price">Giá bán (VNĐ)</label>
+        <input asp-for="Price" class="form-control" readonly />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Height">Chiều cao cây giống (cm)</label>
+        <input asp-for="Height" class="form-control" readonly />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PlantFacilityId">ID Cơ sở sản xuất giống</label>
+        <input asp-for="PlantFacilityId" class="form-control" readonly />
+    </div>
+
+    <div class="form-group">
+        <!-- Truyền Id để xác định cây giống cần xóa -->
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Xác nhận</button>
+        <a asp-action="Index" asp-route-facilityId="@Model.PlantFacilityId" class="btn btn-secondary">Hủy</a>
+    </div>
+</form>

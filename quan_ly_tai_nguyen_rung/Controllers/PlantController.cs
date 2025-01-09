@@ -15,7 +15,6 @@ namespace quan_ly_tai_nguyen_rung.Controllers
     {
         private readonly IPlantRepository _plantRepository;
         private readonly ApplicationDbContext _context;
-
         public PlantController(IPlantRepository plantRepository, ApplicationDbContext context)
         {
             _plantRepository = plantRepository;
@@ -25,12 +24,19 @@ namespace quan_ly_tai_nguyen_rung.Controllers
         // GET: Plant
         public async Task<IActionResult> Index(int facilityId)
         {
+            if (facilityId <= 0)
+            {
+                return BadRequest("Facility ID không hợp lệ.");
+            }
+
             var plants = await _plantRepository.GetAllOfFacility(facilityId);
+            ViewBag.FacilityId = facilityId; // Lưu FacilityId để sử dụng trong View
             return View(plants);
         }
 
         // GET: Plant/Details/5
-        public async Task<IActionResult> Details(int id, int facilityId)
+        [Route("Plant/Detail/{id}/{facilityId}")]
+        public async Task<IActionResult> Detail(int id, int facilityId)
         {
             var plant = await _plantRepository.GetIdByAsyncNoTrackingOfFacility(id, facilityId);
             if (plant == null)
@@ -56,18 +62,27 @@ namespace quan_ly_tai_nguyen_rung.Controllers
         }
 
         // GET: Plant/Create
-        public IActionResult Create()
+        // GET: Plant/Create
+        public IActionResult Create(int facilityId)
         {
+            if (facilityId <= 0)
+            {
+                return BadRequest("Facility ID không hợp lệ.");
+            }
+
+            ViewBag.FacilityId = facilityId; // Lưu facilityId để sử dụng trong View
             PopulatePlantTypeOptions();
             return View();
         }
 
         // POST: Plant/Create
         [HttpPost]
-        public async Task<IActionResult> Creat(PlantViewModel plantViewModel, int facilityId)
+        public async Task<IActionResult> Create(PlantViewModel plantViewModel, int facilityId)
         {
+            PopulatePlantTypeOptions();
             if (!ModelState.IsValid)
             {
+                ViewBag.FacilityId = facilityId; // Đảm bảo facilityId có mặt trong View khi render lại
                 return View(plantViewModel);
             }
 
@@ -81,17 +96,18 @@ namespace quan_ly_tai_nguyen_rung.Controllers
             };
 
             _plantRepository.Add(newPlant);
-            await _context.SaveChangesAsync(); // Lưu cây mới vào cơ sở dữ liệu
+            await _context.SaveChangesAsync();
             TempData["SuccessMessage"] = "Cây đã được thêm thành công!";
-
-            return RedirectToAction(nameof(Index), new { facilityId = facilityId });
+            return RedirectToAction(nameof(Index), new { facilityId });
         }
 
 
         // GET: Plant/Edit/5
+        [HttpGet]
         public async Task<IActionResult> Edit(int id, int facilityId)
         {
             var plant = await _plantRepository.GetIdByAsyncOfFacility(id, facilityId);
+            ViewBag.FacilityId = facilityId;
             if (plant == null)
             {
                 return NotFound();
@@ -104,21 +120,23 @@ namespace quan_ly_tai_nguyen_rung.Controllers
                 Height = plant.Height,
             };
             PopulatePlantTypeOptions(); // Đảm bảo danh sách loại cây có sẵn
-            return View(plant);
+            return View(plantVM);
         }
 
         // POST: Plant/Edit/5
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, PlantViewModel plantVM, int facilityId)
         {
             if (!ModelState.IsValid)
             {
                 ModelState.AddModelError("", "Failed to edit!");
+                ViewBag.FacilityId = facilityId;
                 return View(plantVM);
             }
             PopulatePlantTypeOptions(); 
             // Lấy thông tin cây hiện tại từ repository
-            var existingPlant = await _plantRepository.GetIdByAsyncNoTrackingOfFacility(id, facilityId);
+            var existingPlant = await _plantRepository.GetIdByAsyncOfFacility(id, facilityId);
             if (existingPlant == null)
             {
                 return View("Error"); // Nếu không tìm thấy cây, trả về trang lỗi
@@ -129,7 +147,7 @@ namespace quan_ly_tai_nguyen_rung.Controllers
             existingPlant.Type = plantVM.type;
             existingPlant.Price = plantVM.Price;
             existingPlant.Height = plantVM.Height;
-
+            existingPlant.PlantFacilityId = facilityId;
             // Cập nhật cây trong repository
             _plantRepository.Update(existingPlant);
 
@@ -153,6 +171,7 @@ namespace quan_ly_tai_nguyen_rung.Controllers
         public async Task<IActionResult> Delete(int id, int facilityId)
         {
             var plant = await _plantRepository.GetIdByAsyncOfFacility(id, facilityId);
+            ViewBag.FacilityId = facilityId;
             if (plant == null)
             {
                 return View("Error");
@@ -165,6 +184,8 @@ namespace quan_ly_tai_nguyen_rung.Controllers
         public async Task<IActionResult> DeletePlant(int id, int facilityId)
         {
             var plant = await _plantRepository.GetIdByAsyncOfFacility(id, facilityId);
+            ViewBag.FacilityId = facilityId;
+
             if (plant != null)
             {
                 _plantRepository.Delete(plant);

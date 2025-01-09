@@ -1,0 +1,54 @@
+﻿@model quan_ly_tai_nguyen_rung.ViewModel.FluctuationViewModel
+
+@{
+    ViewData["Title"] = "Thêm mới Biến động";
+}
+
+<h1>Thêm mới Biến động</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Year" class="control-label"></label>
+        <input asp-for="Year" class="form-control" />
+        <span asp-validation-for="Year" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Month" class="control-label"></label>
+        <input asp-for="Month" class="form-control" />
+        <span asp-validation-for="Month" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Quarter" class="control-label"></label>
+        <input asp-for="Quarter" class="form-control" />
+        <span asp-validation-for="Quarter" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AnimalId" class="control-label">Chọn Động vật</label>
+        <select asp-for="AnimalId" class="form-control" asp-items="ViewBag.Animal"></select>
+        <span asp-validation-for="AnimalId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="QuantityChange" class="control-label"></label>
+        <input asp-for="QuantityChange" class="form-control" />
+        <span asp-validation-for="QuantityChange" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Reason" class="control-label"></label>
+        <textarea asp-for="Reason" class="form-control"></textarea>
+        <span asp-validation-for="Reason" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Lưu</button>
+        <a asp-action="Index" asp-route-id="@ViewBag.FacilityId" class="btn btn-secondary">Quay lại</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

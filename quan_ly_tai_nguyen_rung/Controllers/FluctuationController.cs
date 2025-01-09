@@ -26,9 +26,9 @@ namespace quan_ly_tai_nguyen_rung.Controllers
         }
 
         // GET: Index
-        public async Task<IActionResult> Index(int facilityId)
+        public async Task<IActionResult> Index(int id)
         {
-            var fluctuation = await _fluctuationRepository.GetFluctuationByFacilityAsync(facilityId);
+            var fluctuation = await _fluctuationRepository.GetFluctuationByFacilityAsync(id);
             return View(fluctuation);
         }
 

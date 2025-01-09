@@ -1,5 +1,6 @@
 ﻿using quan_ly_tai_nguyen_rung.Models;
 using quan_ly_tai_nguyen_rung.Models.section4;
+using quan_ly_tai_nguyen_rung.ViewModel;
 using quan_ly_tai_nguyen_rung.ViewModel.section4;
 
 namespace quan_ly_tai_nguyen_rung.Interfaces

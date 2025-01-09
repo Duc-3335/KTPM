@@ -41,6 +41,8 @@
                                 <a asp-controller="PlantFacility" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Xem</a>
                                 <a asp-controller="PlantFacility" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Chỉnh sửa</a>
                                 <a asp-controller="PlantFacility" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">Xóa</a>
+                                <a asp-controller="Plant" asp-action="Index" asp-route-facilityId="@item.Id" class="btn btn-sm btn-outline-secondary">Plant</a>
+
                             </div>
                         </td>
                     </tr>

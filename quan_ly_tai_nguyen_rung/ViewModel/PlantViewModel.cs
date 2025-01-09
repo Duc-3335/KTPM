@@ -23,5 +23,6 @@ namespace quan_ly_tai_nguyen_rung.Models.ViewModels
         [Required(ErrorMessage = "Chiều cao là bắt buộc.")]
         [Range(0, int.MaxValue, ErrorMessage = "Chiều cao phải là số dương.")]
         public int Height { get; set; } // Chiều cao cây giống
+
     }
 }

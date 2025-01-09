@@ -1,19 +1,19 @@
-﻿
-<div class="container">
+﻿@model quan_ly_tai_nguyen_rung.Models.section2.Plant
+
+<div class="container mt-4">
     <div class="row">
+        <!-- Left Column: Plant Details -->
         <div class="col-md-5">
             <div class="project-info-box mt-0">
-                <h5>ANIMAL DETAILS</h5>
+                <h5>PLANT DETAILS</h5>
             </div>
 
             <div class="project-info-box">
-                <p><b>Name:</b> @Model?.Name</p>
-                <p><b>Date Found:</b> @Model?.DateFound.ToString("yyyy-MM-dd")</p>
-                <p><b>Generic:</b> @Model?.Generic.ToString()</p>
-                <p><b>Status:</b> @Model?.Status.ToString()</p>
-                <p><b>Quantity Before:</b> @Model?.PreviousQuantity</p>
-                <p><b>Current Quantity:</b> @Model?.CurrentQuantity</p>
-                <p><b>Has Fluctuation:</b> @(Model?.HasFluctuation == true ? "Yes" : "No")</p>
+                <p><b>Name:</b> @Model.Name</p>
+                <p><b>Type:</b> @Model.Type.ToString()</p>
+                <p><b>Price:</b> @Model.Price.ToString("C0") VNĐ</p>
+                <p><b>Height:</b> @Model.Height cm</p>
+                <p><b>Facility:</b> @Model.PlantFacility?.Name</p>
             </div>
 
             <div class="project-info-box mt-0 mb-0">
@@ -27,11 +27,7 @@
             </div>
         </div>
 
-        <div class="col-md-7">
-            <img src="https://www.bootdey.com/image/400x300/FFB6C1/000000" alt="animal-image" class="rounded">
-            <div class="project-info-box">
-                <p><b>Facility ID:</b> @Model?.AnimalFacilityId ?? 0</p>
-            </div>
-        </div>
+        
+        
     </div>
 </div>

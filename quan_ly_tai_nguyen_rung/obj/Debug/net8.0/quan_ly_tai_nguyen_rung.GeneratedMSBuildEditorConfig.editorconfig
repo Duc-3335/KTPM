@@ -66,6 +66,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/KTPM_PJ/quan_ly_tai_nguyen_rung/Views/Fluctuation/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmx1Y3R1YXRpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/KTPM_PJ/quan_ly_tai_nguyen_rung/Views/Fluctuation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmx1Y3R1YXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/KTPM_PJ/quan_ly_tai_nguyen_rung/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -78,6 +86,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbnRGYWNpbGl0eVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/KTPM_PJ/quan_ly_tai_nguyen_rung/Views/PlantFacility/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbnRGYWNpbGl0eVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/KTPM_PJ/quan_ly_tai_nguyen_rung/Views/PlantFacility/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbnRGYWNpbGl0eVxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -88,6 +100,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/KTPM_PJ/quan_ly_tai_nguyen_rung/Views/PlantFacility/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbnRGYWNpbGl0eVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/KTPM_PJ/quan_ly_tai_nguyen_rung/Views/Plant/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/KTPM_PJ/quan_ly_tai_nguyen_rung/Views/Plant/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbnRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/KTPM_PJ/quan_ly_tai_nguyen_rung/Views/Plant/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbnRcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/KTPM_PJ/quan_ly_tai_nguyen_rung/Views/Plant/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbnRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/KTPM_PJ/quan_ly_tai_nguyen_rung/Views/Plant/Index.cshtml]

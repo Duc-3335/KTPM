@@ -44,25 +44,11 @@
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Animal" asp-action="Statistics">Thống kê</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" id="bioResourcesDropdown" data-bs-toggle="collapse" data-bs-target="#bioResourcesSubmenu" aria-expanded="false" aria-controls="bioResourcesSubmenu">
-                            Tài nguyên thực vật
-                        </a>
-                        <ul class="collapse list-unstyled ms-3" id="bioResourcesSubmenu">
-                            
-                            <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="PlantFacility" asp-action="Index">Cơ sở lưu trữ thực vật</a>
                             </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Animal" asp-action="Statistics">Thống kê</a>
-                            </li>
                         </ul>
                     </li>
+                
                     <li class="nav-item">
                         <a class="nav-link" asp-area="" asp-controller="WoodProcessingFacilities" asp-action="Index">Wood Processing Facilities</a>
                     </li>
@@ -85,6 +71,10 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.0/jquery.validate.unobtrusive.min.js"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 

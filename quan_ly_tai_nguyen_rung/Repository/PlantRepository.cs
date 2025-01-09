@@ -47,6 +47,7 @@ namespace quan_ly_tai_nguyen_rung.Repository
         public async Task<Plant> GetIdByAsyncOfFacility(int id, int facilityId)
         {
             return await _context.Plants
+                .Include(a => a.PlantFacility)
                 .Where(p => p.PlantFacilityId == facilityId && p.Id == id) // Lọc theo FacilityId và PlantId
                 .FirstOrDefaultAsync();
         }

@@ -38,9 +38,8 @@ namespace quan_ly_tai_nguyen_rung.Models
         [Required]
         [Column("MONTH")]
         public int Month { get; set; } // THÁNG BIẾN ĐỘNG
-
         // Navigation property
-        [ForeignKey("IdAnimal")]
+        [ForeignKey("AnimalId")]
         public virtual Animal Animal { get; set; }
     }
 }

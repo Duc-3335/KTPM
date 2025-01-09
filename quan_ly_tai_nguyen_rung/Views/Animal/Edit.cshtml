@@ -9,6 +9,7 @@
 
 <form method="post" asp-action="Edit">
     <input type="hidden" asp-for="Id" /> <!-- Ẩn Id để truyền vào khi submit -->
+    <input type="hidden" name="facilityId" value="@ViewBag.FacilityId" />
 
     <div class="form-group">
         <label asp-for="Name">Tên</label>

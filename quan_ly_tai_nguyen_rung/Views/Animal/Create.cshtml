@@ -6,7 +6,8 @@
 *@
 @{
 }
-<form method="post" asp-action="Create">
+<form method="post" asp-action="Create" >
+    <input type="hidden" name="facilityId" value="@ViewBag.FacilityId" />
     <div class="form-group">
         <label asp-for="Name">Tên</label>
         <input asp-for="Name" class="form-control" placeholder="Enter name">
@@ -57,11 +58,8 @@
         <span asp-validation-for="CurrentQuantity" class="text-danger"></span>
     </div>
 
-    <div class="form-group">
-        <label asp-for="AnimalFacilityId">Cơ sở động vật</label>
-        <input asp-for="AnimalFacilityId" type="number" class="form-control" placeholder="Enter facility ID">
-        <span asp-validation-for="AnimalFacilityId" class="text-danger"></span>
-    </div>
+
 
     <button type="submit" class="btn btn-primary">Lưu</button>
 </form>
+@* <a href="@Url.Action("Index", "PlantFacility")" class="btn btn-secondary mt-3">Trở lại</a> *@

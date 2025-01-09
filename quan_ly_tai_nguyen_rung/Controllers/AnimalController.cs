@@ -27,12 +27,13 @@ namespace quan_ly_tai_nguyen_rung.Controllers
         // GET: Animal
         public async Task<IActionResult> Index(int id)
         {
+            ViewBag.FacilityId = id; // Truyền facilityId qua ViewBag
             var animals = await _animalRepository.GetAllOfFacility(id);
             return View(animals);
         }
-
+        [Route("Animal/Detail/{id}/{facilityId}")]
         // GET: Animal/Details/5
-        public async Task<IActionResult> Details(int id,int facilityId)
+        public async Task<IActionResult> Detail(int id,int facilityId)
         {
             var animal = await _animalRepository.GetIdByAsyncNoTrackingOfFacility(id, facilityId);
             if (animal == null)
@@ -83,8 +84,10 @@ namespace quan_ly_tai_nguyen_rung.Controllers
         }
 
         // GET: Animal/Create
-        public IActionResult Create()
+        // GET: Animal/Create
+        public IActionResult Create(int facilityId)
         {
+            ViewBag.FacilityId = facilityId; // Truyền facilityId vào ViewBag
             PopulateGenericOptions();
             PopulateIsActiveOptions();
             PopulateStatusOptions();
@@ -93,10 +96,14 @@ namespace quan_ly_tai_nguyen_rung.Controllers
 
         // POST: Animal/Create
         [HttpPost]
-        public async Task<IActionResult> Create(AnimalViewModel animalViewModel)
+        public async Task<IActionResult> Create(AnimalViewModel animalViewModel, int facilityId)
         {
             if (!ModelState.IsValid)
             {
+                ViewBag.FacilityId = facilityId; // Truyền lại facilityId khi có lỗi
+                PopulateGenericOptions();
+                PopulateIsActiveOptions();
+                PopulateStatusOptions();
                 return View(animalViewModel);
             }
 
@@ -109,19 +116,22 @@ namespace quan_ly_tai_nguyen_rung.Controllers
                 Status = animalViewModel.Status,
                 HasFluctuation = animalViewModel.HasFluctuation,
                 CurrentQuantity = animalViewModel.CurrentQuantity,
-                AnimalFacilityId = animalViewModel.AnimalFacilityId
+                AnimalFacilityId = facilityId, // Gán facilityId
             };
 
             _animalRepository.Add(newAnimal);
             await _context.SaveChangesAsync(); // Lưu động vật mới vào cơ sở dữ liệu
 
-            return RedirectToAction(nameof(Index));
+            TempData["SuccessMessage"] = "Động vật đã được thêm thành công!";
+            return RedirectToAction(nameof(Index), new { id = facilityId }); // Chuyển hướng về danh sách động vật
         }
+
 
         // GET: Animal/Edit/5
         public async Task<IActionResult> Edit(int id,int facilityId)
         {
             var animal = await _animalRepository.GetIdByAsyncOfFacility(id, facilityId);
+            ViewBag.FacilityId = facilityId;
             if (animal == null)
             {
                 return NotFound();
@@ -150,6 +160,7 @@ namespace quan_ly_tai_nguyen_rung.Controllers
             if (!ModelState.IsValid)
             {
                 ModelState.AddModelError("", "Failed to edit!");
+                ViewBag.FacilityId = facilityId;
                 return View(animalVM);
             }
 
@@ -172,7 +183,8 @@ namespace quan_ly_tai_nguyen_rung.Controllers
             _animalRepository.Update(existingAnimal);
 
             // Chuyển hướng về danh sách động vật
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index), new { id = facilityId }); // Chuyển hướng về danh sách động vật
+
         }
 
         public async Task<IActionResult> SearchByName(string name, int facilityId)
@@ -191,6 +203,7 @@ namespace quan_ly_tai_nguyen_rung.Controllers
         public async Task<IActionResult> Delete(int id, int facilityId)
         {
             var animal = await _animalRepository.GetIdByAsyncOfFacility(id,facilityId);
+            ViewBag.FacilityId = facilityId;
             if (animal == null)
             {
                 return View("Error");
@@ -203,6 +216,7 @@ namespace quan_ly_tai_nguyen_rung.Controllers
         public async Task<IActionResult> DeleteAnimal(int id, int facilityId)
         {
             var animal = await _animalRepository.GetIdByAsyncOfFacility(id, facilityId);
+            ViewBag.FacilityId = facilityId;
             if (animal != null)
             {
                 _animalRepository.Delete(animal);
