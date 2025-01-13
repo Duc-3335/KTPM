@@ -2,6 +2,7 @@
 {
     public class FluctuationStatisticViewModel
     {
+        
         public string FacilityName { get; set; }
         public int FacilityId { get; set; }
         public List<YearlyFluctuationStatistics> YearlyData { get; set; }
@@ -28,6 +29,8 @@
 
     public class FluctuationDetails
     {
+        public int id { get; set; }
+        public int AnimalId {  get; set; }
         public string AnimalName { get; set; }
         public int QuantityChange { get; set; }
         public List<string> Reasons { get; set; }

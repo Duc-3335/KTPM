@@ -77,6 +77,8 @@ namespace quan_ly_tai_nguyen_rung.Repository
                                     FluctuationDetails = m.GroupBy(f => f.Animal.Name)
                                         .Select(a => new FluctuationDetails
                                         {
+                                            id = a.First().Id, // Sửa lại để lấy Id chính xác
+                                            AnimalId = a.First().AnimalId, // Lấy AnimalId từ đối tượng đầu tiên
                                             AnimalName = a.Key,
                                             QuantityChange = a.Sum(x => x.QuantityChange),
                                             Reasons = a.Select(x => x.Reason).Distinct().ToList()
@@ -92,6 +94,7 @@ namespace quan_ly_tai_nguyen_rung.Repository
                 YearlyData = groupedByYear
             };
         }
+
 
         public bool Save()
         {

@@ -1,60 +1,45 @@
 ﻿@model quan_ly_tai_nguyen_rung.ViewModel.FluctuationStatisticViewModel
 
-@{
-    ViewData["Title"] = "Fluctuation Index";
-}
+<h2>Danh sách Biến Động</h2>
 
-<h1>Thống kê biến động: @Model.FacilityName</h1>
-<p>
-    <a asp-action="Create" asp-route-facilityId="@Model.FacilityId" class="btn btn-primary">Create</a>
-</p>
+<a asp-action="Create" asp-route-facilityId="@Model.FacilityId" class="btn btn-success mb-3">Thêm mới</a>
 
-@foreach (var yearlyData in Model.YearlyData)
-{
-    <h2>Năm: @yearlyData.Year</h2>
-    <div class="accordion" id="accordionYear@yearlyData.Year">
-        @foreach (var quarterlyData in yearlyData.QuarterlyData)
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Năm</th>
+            <th>Quý</th>
+            <th>Tháng</th>
+            <th>Động vật</th>
+            <th>Số lượng thay đổi</th>
+            <th>Lý do</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var yearData in Model.YearlyData)
         {
-            <div class="accordion-item">
-                <h3 class="accordion-header" id="headingQuarter@quarterlyData.Quarter">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuarter@quarterlyData.Quarter" aria-expanded="true" aria-controls="collapseQuarter@quarterlyData.Quarter">
-                        Quý: @quarterlyData.Quarter
-                    </button>
-                </h3>
-                <div id="collapseQuarter@quarterlyData.Quarter" class="accordion-collapse collapse show" aria-labelledby="headingQuarter@quarterlyData.Quarter" data-bs-parent="#accordionYear@yearlyData.Year">
-                    <div class="accordion-body">
-                        @foreach (var monthlyData in quarterlyData.MonthlyData)
-                        {
-                            <h4>Tháng: @monthlyData.Month</h4>
-                            <p>Tổng thay đổi: @monthlyData.TotalQuantityChange</p>
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Động vật</th>
-                                        <th>Số lượng thay đổi</th>
-                                        <th>Lý do</th>
-                                        <th>Hành động</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach (var detail in monthlyData.FluctuationDetails)
-                                    {
-                                        <tr>
-                                            <td>@detail.AnimalName</td>
-                                            <td>@detail.QuantityChange</td>
-                                            <td>@string.Join(", ", detail.Reasons)</td>
-                                            <td>
-                                                <a asp-action="Edit" asp-route-id="@detail.AnimalName" asp-route-facilityId="@Model.FacilityId" class="btn btn-sm btn-warning">Sửa</a>
-                                                <a asp-action="Delete" asp-route-id="@detail.AnimalName" asp-route-facilityId="@Model.FacilityId" class="btn btn-sm btn-danger">Xóa</a>
-                                            </td>
-                                        </tr>
-                                    }
-                                </tbody>
-                            </table>
-                        }
-                    </div>
-                </div>
-            </div>
+            foreach (var quarterData in yearData.QuarterlyData)
+            {
+                foreach (var monthData in quarterData.MonthlyData)
+                {
+                    foreach (var detail in monthData.FluctuationDetails)
+                    {
+                        <tr>
+                            <td>@yearData.Year</td>
+                            <td>@quarterData.Quarter</td>
+                            <td>@monthData.Month</td>
+                            <td>@detail.AnimalName</td>
+                            <td>@detail.QuantityChange</td>
+                            <td>@string.Join(", ", detail.Reasons)</td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@detail.id" asp-route-facilityId="@ViewBag.FacilityId" class="btn btn-warning btn-sm">Sửa</a>
+                                <a asp-action="Delete" asp-route-id="@detail.id" asp-route-facilityId="@ViewBag.FacilityId" class="btn btn-danger btn-sm">Xóa</a>
+                            </td>
+                        </tr>
+                    }
+                }
+            }
         }
-    </div>
-}
+    </tbody>
+</table>

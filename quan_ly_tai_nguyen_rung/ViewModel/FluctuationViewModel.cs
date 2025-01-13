@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace quan_ly_tai_nguyen_rung.ViewModel
 {
@@ -9,7 +10,8 @@ namespace quan_ly_tai_nguyen_rung.ViewModel
         [Required(ErrorMessage = "Năm là bắt buộc.")]
         [Range(1900, 2100, ErrorMessage = "Năm phải nằm trong khoảng từ 1900 đến 2100.")]
         public int Year { get; set; }
-
+        [Required]
+        public bool Type { get; set; } 
         [Required(ErrorMessage = "Tháng là bắt buộc.")]
         [Range(1, 12, ErrorMessage = "Tháng phải nằm trong khoảng từ 1 đến 12.")]
         public int Month { get; set; }

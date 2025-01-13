@@ -28,6 +28,8 @@ namespace quan_ly_tai_nguyen_rung.Controllers
         // GET: Index
         public async Task<IActionResult> Index(int id)
         {
+            ViewBag.FacilityId = id;
+           
             var fluctuation = await _fluctuationRepository.GetFluctuationByFacilityAsync(id);
             return View(fluctuation);
         }
@@ -42,7 +44,9 @@ namespace quan_ly_tai_nguyen_rung.Controllers
         // GET: Create
         public async Task<IActionResult> Create(int facilityId)
         {
+            ViewBag.FacilityId = facilityId;
             await PopulateAnimals(facilityId);
+            
             return View();
         }
 
@@ -53,11 +57,13 @@ namespace quan_ly_tai_nguyen_rung.Controllers
             if (!ModelState.IsValid)
             {
                 await PopulateAnimals(facilityId);
+                ViewBag.FacilityId = facilityId;
                 return View(model);
             }
 
             var fluctuation = new Fluctuation
             {
+                Type = model.Type,
                 Year = model.Year,
                 Month = model.Month,
                 Quarter = model.Quarter,
@@ -70,13 +76,14 @@ namespace quan_ly_tai_nguyen_rung.Controllers
             await _context.SaveChangesAsync();
 
             TempData["SuccessMessage"] = "Fluctuation đã cập nhật thành công!";
-            return RedirectToAction(nameof(Index), new { facilityId = facilityId });
+            return RedirectToAction(nameof(Index), new { id = facilityId });
         }
 
         // GET: Edit
         public async Task<IActionResult> Edit(int id, int facilityId)
         {
             var fluctuation = await _fluctuationRepository.GetIdByAsync(id);
+            ViewBag.FacilityId = facilityId;
             if (fluctuation == null)
             {
                 return NotFound("Fluctuation not found.");
@@ -89,6 +96,7 @@ namespace quan_ly_tai_nguyen_rung.Controllers
                 Id = fluctuation.Id,
                 Year = fluctuation.Year,
                 Month = fluctuation.Month,
+                Type = fluctuation.Type,
                 Quarter = fluctuation.Quarter,
                 AnimalId = fluctuation.AnimalId,
                 QuantityChange = fluctuation.QuantityChange,
@@ -105,6 +113,7 @@ namespace quan_ly_tai_nguyen_rung.Controllers
             if (!ModelState.IsValid)
             {
                 await PopulateAnimals(facilityId);
+                ViewBag.FacilityId = facilityId;
                 return View(model);
             }
 
@@ -117,6 +126,7 @@ namespace quan_ly_tai_nguyen_rung.Controllers
             fluctuation.Year = model.Year;
             fluctuation.Month = model.Month;
             fluctuation.Quarter = model.Quarter;
+            fluctuation.Type = model.Type;
             fluctuation.AnimalId = model.AnimalId;
             fluctuation.QuantityChange = model.QuantityChange;
             fluctuation.Reason = model.Reason;
@@ -125,13 +135,14 @@ namespace quan_ly_tai_nguyen_rung.Controllers
             await _context.SaveChangesAsync();
 
             TempData["SuccessMessage"] = "Fluctuation data đã cập nahajt thành công!";
-            return RedirectToAction(nameof(Index), new { facilityId = facilityId });
+            return RedirectToAction(nameof(Index), new { id = facilityId });
         }
 
         // GET: Delete
         public async Task<IActionResult> Delete(int id, int facilityId)
         {
             var fluctuation = await _fluctuationRepository.GetIdByAsync(id);
+            ViewBag.FacilityId = facilityId;
             if (fluctuation == null)
             {
                 return NotFound("Fluctuation not found.");
@@ -145,6 +156,7 @@ namespace quan_ly_tai_nguyen_rung.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id, int facilityId)
         {
             var fluctuation = await _fluctuationRepository.GetIdByAsync(id);
+            ViewBag.FacilityId = facilityId;
             if (fluctuation != null)
             {
                 _fluctuationRepository.Delete(fluctuation);
@@ -157,7 +169,7 @@ namespace quan_ly_tai_nguyen_rung.Controllers
                 TempData["ErrorMessage"] = "Fluctuation đã xóa thành công.";
             }
 
-            return RedirectToAction(nameof(Index), new { facilityId = facilityId });
+            return RedirectToAction(nameof(Index), new { id = facilityId });
         }
     }
 }

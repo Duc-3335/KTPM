@@ -1,10 +1,9 @@
 ﻿@model quan_ly_tai_nguyen_rung.ViewModel.FluctuationViewModel
 
-<h2>Thêm Biến Động Mới</h2>
-
-<form asp-action="Create" method="post">
+<h2>Chỉnh sửa Biến Động</h2>
+<form asp-action="Edit" method="post">
     <input type="hidden" name="facilityId" value="@ViewBag.FacilityId" />
-
+    <input type="hidden" asp-for="Id" />
     <div class="form-group">
         <label asp-for="Year">Năm</label>
         <input asp-for="Year" class="form-control" />
@@ -48,7 +47,7 @@
         <textarea asp-for="Reason" class="form-control"></textarea>
         <span asp-validation-for="Reason" class="text-danger"></span>
     </div>
-
-    <button type="submit" class="btn btn-primary">Lưu</button>
+    <!-- Form fields giống Create.cshtml -->
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
     <a asp-action="Index" asp-route-facilityId="@ViewBag.FacilityId" class="btn btn-secondary">Trở lại</a>
 </form>
