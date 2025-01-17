@@ -31,7 +31,7 @@
                             <td>@plantData.PlantName</td>
                             <td class="text-end">@plantData.TotalSold</td>
                             <td class="text-center">
-                                <a asp-action="Edit" asp-route-id="@plantData.PlantName" asp-route-facilityId="@Model.FacilityId" class="btn btn-warning btn-sm">Sửa</a>
+                                <a asp-action="Edit" asp-route-plantId="@plantData.PlantId" asp-route-id="@plantData.id" asp-route-year="@yearData.Year" asp-route-month="@monthData.Month" asp-route-facilityId="@Model.FacilityId" class="btn btn-warning btn-sm">Sửa</a>
                                 <a asp-action="Delete" asp-route-id="@plantData.id" asp-route-facilityId="@Model.FacilityId" class="btn btn-danger btn-sm">Xóa</a>
                             </td>
                         </tr>

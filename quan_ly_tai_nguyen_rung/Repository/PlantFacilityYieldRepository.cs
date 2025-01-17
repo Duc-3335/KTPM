@@ -72,6 +72,8 @@ namespace quan_ly_tai_nguyen_rung.Repository
                                     PlantData = t.GroupBy(p => p.Plant.Name)
                                         .Select(p => new PlantStatistics
                                         {
+                                            id = p.First().Id,
+                                            PlantId = p.First().PlantId,
                                             PlantName = p.Key,
                                             TotalSold = p.Sum(x => x.Yield)
                                         }).ToList()

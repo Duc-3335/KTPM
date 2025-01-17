@@ -33,7 +33,8 @@ namespace quan_ly_tai_nguyen_rung.ViewModel.section2
 
     public class PlantStatistics
     {
-        int id;
+        public int id { get; set; }
+        public int PlantId { get; set; }
         public string PlantName { get; set; }
         public int TotalSold { get; set; }
     }
