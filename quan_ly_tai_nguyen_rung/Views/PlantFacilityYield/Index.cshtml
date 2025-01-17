@@ -1,0 +1,43 @@
+﻿@model quan_ly_tai_nguyen_rung.ViewModel.section2.PlantFacilityYieldStatisticsViewModel
+
+<h2 class="text-primary">Danh sách Sản lượng</h2>
+
+<a asp-action="Create" asp-route-facilityId="@Model.FacilityId" class="btn btn-success mb-3">Thêm mới</a>
+
+<table class="table table-bordered table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Năm</th>
+            <th>Quý</th>
+            <th>Tháng</th>
+            <th>Cây trồng</th>
+            <th>Sản lượng</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var yearData in Model.YearlyData)
+        {
+            foreach (var quarterData in yearData.QuarterlyData)
+            {
+                foreach (var monthData in quarterData.MonthlyData)
+                {
+                    foreach (var plantData in monthData.PlantData)
+                    {
+                        <tr>
+                            <td class="fw-bold">@yearData.Year</td>
+                            <td class="text-center">@quarterData.Quarter</td>
+                            <td class="text-center">@monthData.Month</td>
+                            <td>@plantData.PlantName</td>
+                            <td class="text-end">@plantData.TotalSold</td>
+                            <td class="text-center">
+                                <a asp-action="Edit" asp-route-id="@plantData.PlantName" asp-route-facilityId="@Model.FacilityId" class="btn btn-warning btn-sm">Sửa</a>
+                                <a asp-action="Delete" asp-route-id="@plantData.id" asp-route-facilityId="@Model.FacilityId" class="btn btn-danger btn-sm">Xóa</a>
+                            </td>
+                        </tr>
+                    }
+                }
+            }
+        }
+    </tbody>
+</table>

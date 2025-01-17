@@ -1,0 +1,49 @@
+﻿@model quan_ly_tai_nguyen_rung.ViewModel.section2.PlantFacilityYieldViewModel
+
+<h2 class="text-primary">Chỉnh sửa Sản lượng</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" name="facilityId" value="@ViewBag.FacilityId" />
+    <div class="form-group">
+        <label asp-for="Year" class="fw-bold">Năm</label>
+        <input asp-for="Year" class="form-control" />
+        <span asp-validation-for="Year" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Quarter" class="fw-bold">Quý</label>
+        <select asp-for="Quarter" class="form-control">
+            <option value="1">Quý 1</option>
+            <option value="2">Quý 2</option>
+            <option value="3">Quý 3</option>
+            <option value="4">Quý 4</option>
+        </select>
+        <span asp-validation-for="Quarter" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Month" class="fw-bold">Tháng</label>
+        <select asp-for="Month" class="form-control">
+            @for (int i = 1; i <= 12; i++)
+            {
+                <option value="@i">Tháng @i</option>
+            }
+        </select>
+        <span asp-validation-for="Month" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PlantId" class="fw-bold">Cây trồng</label>
+        <select asp-for="PlantId" asp-items="ViewBag.Plants" class="form-control"></select>
+        <span asp-validation-for="PlantId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Yield" class="fw-bold">Sản lượng</label>
+        <input asp-for="Yield" class="form-control" />
+        <span asp-validation-for="Yield" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lưu</button>
+    <a asp-action="Index" asp-route-facilityId="@ViewBag.FacilityId" class="btn btn-secondary">Trở lại</a>
+</form>

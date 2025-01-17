@@ -27,6 +27,7 @@ public class PlantFacilityYieldController : Controller
     // Hiển thị danh sách sản lượng theo cơ sở
     public async Task<IActionResult> Index(int facilityId)
     {
+        ViewBag.FacilityId = facilityId;
         var statistics = await _plantFacilityYieldRepository.GetStatisticsByFacilityAsync(facilityId);
         return View(statistics);
     }
@@ -40,7 +41,8 @@ public class PlantFacilityYieldController : Controller
     // Thêm mới: Hiển thị form
     public async Task<IActionResult> Create(int facilityId)
     {
-        PopulatePlants(facilityId);
+        ViewBag.FacilityId = facilityId;
+        await PopulatePlants(facilityId);
         return View();
     }
 
@@ -50,6 +52,7 @@ public class PlantFacilityYieldController : Controller
     {
         if (!ModelState.IsValid)
         {
+            ViewBag.FacilityId = facilityId;
             return View(yieldViewModel);
         }
         var newYield = new PlantFacilityYield
@@ -80,6 +83,7 @@ public class PlantFacilityYieldController : Controller
     public async Task<IActionResult> Edit(int year, int month, int facilityId, int plantId)
     {
         var yieldData = await _plantFacilityYieldRepository.GetYieldByYearMonthAndFacilityAsync(year, month, facilityId, plantId);
+        ViewBag.FacilityId = facilityId;
         if (yieldData == null)
         {
             return NotFound("Dữ liệu không tồn tại.");
@@ -106,6 +110,7 @@ public class PlantFacilityYieldController : Controller
     {
         if (!ModelState.IsValid)
         {
+            ViewBag.FacilityId = facilityId;
             return View(model);
         }
 
@@ -135,6 +140,7 @@ public class PlantFacilityYieldController : Controller
     public async Task<IActionResult> Delete(int id, int facilityId)
     {
         var record = await _plantFacilityYieldRepository.GetByIdAsync(id);
+        ViewBag.FacilityId = facilityId;
         if (record == null)
         {
             return NotFound("Dữ liệu không tồn tại.");
@@ -147,6 +153,7 @@ public class PlantFacilityYieldController : Controller
     public async Task<IActionResult> DeleteConfirmed(int id, int facilityId)
     {
         var record = await _plantFacilityYieldRepository.GetByIdAsync(id);
+        ViewBag.FacilityId = facilityId;
         if (record != null)
         {
             _plantFacilityYieldRepository.Delete(record); // Xóa bản ghi đã tìm thấy

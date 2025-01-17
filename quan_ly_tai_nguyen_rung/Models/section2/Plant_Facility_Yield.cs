@@ -20,7 +20,7 @@ namespace quan_ly_tai_nguyen_rung.Models.section2
         public int Year { get; set; } // Năm 
 
         [Required]
-        [Column("QUATER")]
+        [Column("QUARTER")]
         public int Quarter { get; set; } //Quý 
 
         [Required]
