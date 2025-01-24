@@ -6,7 +6,7 @@
 @{
 }
 <form method="post" asp-action="Edit" enctype="multipart/form-data">
-    @* <input type="hidden" value="CommuneId" id="CommuneId"/> *@
+    <input type="hidden" asp-for="URL" />
     <div class="form-group">
         <label asp-for="Name">Tên</label>
         <input asp-for="Name" class="form-control" placeholder="Enter name">
@@ -51,9 +51,17 @@
         <span asp-validation-for="CommuneId" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="ImageAnimalStorage">Ảnh cơ sở động vật</label>
+        <label asp-for="ImageAnimalStorage"></label>
         <input asp-for="ImageAnimalStorage" type="file" class="form-control" />
-        <span asp-validation-for="ImageAnimalStorage" class="text-danger"></span>
+        @if (!string.IsNullOrEmpty(Model.URL))
+        {
+            <p>Hình ảnh hiện tại:</p>
+            <img src="~/Images/@Model.URL" alt="Current Image" style="max-width: 200px;" />
+            <div class="form-check mt-2">
+                <input type="checkbox" asp-for="RemoveImage" class="form-check-input" id="removeImageCheckbox" />
+                <label class="form-check-label" for="removeImageCheckbox">Xóa ảnh hiện tại</label>
+            </div>
+        }
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

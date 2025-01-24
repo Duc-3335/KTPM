@@ -157,7 +157,7 @@ namespace quan_ly_tai_nguyen_rung.Controllers
 
         public async Task<IActionResult> SearchByName(string name,int facilityId)
         {
-
+            ViewBag.FacilityId = facilityId;
             if (string.IsNullOrEmpty(name) || string.IsNullOrWhiteSpace(name))
             {
                 // Nếu không có tên được nhập, trả về danh sách đầy đủ

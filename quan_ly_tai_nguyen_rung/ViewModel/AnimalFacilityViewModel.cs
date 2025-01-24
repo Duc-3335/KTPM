@@ -34,11 +34,12 @@ namespace quan_ly_tai_nguyen_rung.ViewModels
 
         [Required]
         public double Acreage { get; set; }
-
-        public string? ImageAnimalStorage { get; set; }
+        public string? URL { get; set; }
+        public IFormFile? ImageAnimalStorage { get; set; }
 
         [Required]
         public int CommuneId { get; set; } // Lưu giá trị commune được chọn từ dropdown
+        public bool RemoveImage { get; set; } // Đánh dấu xóa ảnh
     }
     
 }

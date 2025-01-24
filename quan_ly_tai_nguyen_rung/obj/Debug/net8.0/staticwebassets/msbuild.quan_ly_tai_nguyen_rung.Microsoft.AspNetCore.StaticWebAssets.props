@@ -32,6 +32,246 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\057899f7-7052-4cda-bb8c-0e795c185e47-fix.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>quan_ly_tai_nguyen_rung</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/quan_ly_tai_nguyen_rung</BasePath>
+      <RelativePath>Images/057899f7-7052-4cda-bb8c-0e795c185e47-fix.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\057899f7-7052-4cda-bb8c-0e795c185e47-fix.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\1332735f-3106-40b0-8582-c3d6e9a5d874-controller.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>quan_ly_tai_nguyen_rung</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/quan_ly_tai_nguyen_rung</BasePath>
+      <RelativePath>Images/1332735f-3106-40b0-8582-c3d6e9a5d874-controller.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\1332735f-3106-40b0-8582-c3d6e9a5d874-controller.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\1cadabc0-7cae-4218-9f19-da82bacfceb9-Screenshot 2024-05-12 145924.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>quan_ly_tai_nguyen_rung</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/quan_ly_tai_nguyen_rung</BasePath>
+      <RelativePath>Images/1cadabc0-7cae-4218-9f19-da82bacfceb9-Screenshot 2024-05-12 145924.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\1cadabc0-7cae-4218-9f19-da82bacfceb9-Screenshot 2024-05-12 145924.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\547b451c-c907-40cd-bb6a-80259c10dffc-Screenshot 2024-07-01 205734.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>quan_ly_tai_nguyen_rung</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/quan_ly_tai_nguyen_rung</BasePath>
+      <RelativePath>Images/547b451c-c907-40cd-bb6a-80259c10dffc-Screenshot 2024-07-01 205734.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\547b451c-c907-40cd-bb6a-80259c10dffc-Screenshot 2024-07-01 205734.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\5c43ba4d-0eea-47d6-b4df-a0f4713553d3-Screenshot 2024-05-05 202213.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>quan_ly_tai_nguyen_rung</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/quan_ly_tai_nguyen_rung</BasePath>
+      <RelativePath>Images/5c43ba4d-0eea-47d6-b4df-a0f4713553d3-Screenshot 2024-05-05 202213.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\5c43ba4d-0eea-47d6-b4df-a0f4713553d3-Screenshot 2024-05-05 202213.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\63ebe1e9-08ca-445a-bd28-aa8eba844603-Screenshot 2024-05-12 145924.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>quan_ly_tai_nguyen_rung</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/quan_ly_tai_nguyen_rung</BasePath>
+      <RelativePath>Images/63ebe1e9-08ca-445a-bd28-aa8eba844603-Screenshot 2024-05-12 145924.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\63ebe1e9-08ca-445a-bd28-aa8eba844603-Screenshot 2024-05-12 145924.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\689079b9-653d-4f17-9600-486b1a340b8a-Screenshot 2024-05-05 202213.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>quan_ly_tai_nguyen_rung</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/quan_ly_tai_nguyen_rung</BasePath>
+      <RelativePath>Images/689079b9-653d-4f17-9600-486b1a340b8a-Screenshot 2024-05-05 202213.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\689079b9-653d-4f17-9600-486b1a340b8a-Screenshot 2024-05-05 202213.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\8c707413-0650-4807-bb7b-e7c6462cf952-book2.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>quan_ly_tai_nguyen_rung</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/quan_ly_tai_nguyen_rung</BasePath>
+      <RelativePath>Images/8c707413-0650-4807-bb7b-e7c6462cf952-book2.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\8c707413-0650-4807-bb7b-e7c6462cf952-book2.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\8da55891-293f-443e-8405-efeb512fad06-book2.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>quan_ly_tai_nguyen_rung</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/quan_ly_tai_nguyen_rung</BasePath>
+      <RelativePath>Images/8da55891-293f-443e-8405-efeb512fad06-book2.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\8da55891-293f-443e-8405-efeb512fad06-book2.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\a101acdf-e59b-49fe-a080-3835759018ef-Screenshot 2024-05-05 202213.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>quan_ly_tai_nguyen_rung</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/quan_ly_tai_nguyen_rung</BasePath>
+      <RelativePath>Images/a101acdf-e59b-49fe-a080-3835759018ef-Screenshot 2024-05-05 202213.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\a101acdf-e59b-49fe-a080-3835759018ef-Screenshot 2024-05-05 202213.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\b7b5c225-8d2d-4c66-89db-ac23eb220fb9-Screenshot 2024-05-05 202213.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>quan_ly_tai_nguyen_rung</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/quan_ly_tai_nguyen_rung</BasePath>
+      <RelativePath>Images/b7b5c225-8d2d-4c66-89db-ac23eb220fb9-Screenshot 2024-05-05 202213.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\b7b5c225-8d2d-4c66-89db-ac23eb220fb9-Screenshot 2024-05-05 202213.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\c74547e1-d977-4da0-b600-8db808d952b6-Screenshot 2024-05-05 202213.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>quan_ly_tai_nguyen_rung</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/quan_ly_tai_nguyen_rung</BasePath>
+      <RelativePath>Images/c74547e1-d977-4da0-b600-8db808d952b6-Screenshot 2024-05-05 202213.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\c74547e1-d977-4da0-b600-8db808d952b6-Screenshot 2024-05-05 202213.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\d9289f63-28b4-4959-a944-f327a7ba6e30-Screenshot 2024-09-19 150856.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>quan_ly_tai_nguyen_rung</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/quan_ly_tai_nguyen_rung</BasePath>
+      <RelativePath>Images/d9289f63-28b4-4959-a944-f327a7ba6e30-Screenshot 2024-09-19 150856.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\d9289f63-28b4-4959-a944-f327a7ba6e30-Screenshot 2024-09-19 150856.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\e19fbaa8-df69-471d-b4dc-c09063e61910-Screenshot 2024-05-12 145924.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>quan_ly_tai_nguyen_rung</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/quan_ly_tai_nguyen_rung</BasePath>
+      <RelativePath>Images/e19fbaa8-df69-471d-b4dc-c09063e61910-Screenshot 2024-05-12 145924.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\e19fbaa8-df69-471d-b4dc-c09063e61910-Screenshot 2024-05-12 145924.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\eaae63cd-2bf6-4417-a95c-e720b639b81a-Screenshot 2024-08-23 124525.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>quan_ly_tai_nguyen_rung</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/quan_ly_tai_nguyen_rung</BasePath>
+      <RelativePath>Images/eaae63cd-2bf6-4417-a95c-e720b639b81a-Screenshot 2024-08-23 124525.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\eaae63cd-2bf6-4417-a95c-e720b639b81a-Screenshot 2024-08-23 124525.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\site.js))">
       <SourceType>Package</SourceType>
       <SourceId>quan_ly_tai_nguyen_rung</SourceId>

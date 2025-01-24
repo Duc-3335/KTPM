@@ -9,6 +9,7 @@
                     <input type="text" name="name" class="form-control" placeholder="Nhập tên động vật" value="@ViewContext.HttpContext.Request.Query["name"]" />
                 </div>
                 <div class="col-md-4">
+                    <input type="hidden" name="facilityId" value="@ViewBag.FacilityId" />
                     <button type="submit" class="btn btn-primary">Tìm kiếm</button>
                 </div>
             </div>

@@ -2,13 +2,14 @@
 
 <div class="album py-5 bg-body-tertiary">
     <div class="container">
-        @using (Html.BeginForm("Index", "Plant", FormMethod.Get))
+        @using (Html.BeginForm("SearchByName", "Plant", FormMethod.Get))
         {
             <div class="row">
                 <div class="col-md-8">
                     <input type="text" name="name" class="form-control" placeholder="Nhập tên cây" value="@ViewContext.HttpContext.Request.Query["name"]" />
                 </div>
                 <div class="col-md-4">
+                    <input type="hidden" name="facilityId" value="@ViewBag.FacilityId" />
                     <button type="submit" class="btn btn-primary">Tìm kiếm</button>
                 </div>
             </div>

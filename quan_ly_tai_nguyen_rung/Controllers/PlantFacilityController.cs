@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using quan_ly_tai_nguyen_rung.DATA;
@@ -14,11 +15,16 @@ namespace quan_ly_tai_nguyen_rung.Controllers
         private readonly IPlantFacilityRepository _plantFacilityRepository;
         private readonly IPlantRepository _plantRepository;
         private readonly ApplicationDbContext _context;
-        public PlantFacilityController(IPlantFacilityRepository plantFacilityRepository, IPlantRepository plantRepository, ApplicationDbContext context)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public PlantFacilityController(IPlantFacilityRepository plantFacilityRepository,
+            IPlantRepository plantRepository,
+            ApplicationDbContext context,
+            IWebHostEnvironment webHostEnvironment)
         {
             _plantFacilityRepository = plantFacilityRepository;
             _plantRepository = plantRepository;
             _context = context;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         public async Task<IActionResult> Index()
@@ -68,10 +74,26 @@ namespace quan_ly_tai_nguyen_rung.Controllers
                 Acreage = facilityVM.Acreage,
                 Labor = facilityVM.Labor,
                 CommuneId = facilityVM.CommuneId,
+                ImagePlantBreedingFacility = UploadFile(facilityVM),
             };
 
             _plantFacilityRepository.Add(facility);
             return RedirectToAction("Index");
+        }
+        private string UploadFile(PlantFacilityViewModel facilityVM)
+        {
+            string filename = null;
+            if (facilityVM.ImagePlantBreedingFacility != null)
+            {
+                string UploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "Images");
+                filename = Guid.NewGuid().ToString() + "-" + facilityVM.ImagePlantBreedingFacility.FileName;
+                string filePath = Path.Combine(UploadDir, filename);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    facilityVM.ImagePlantBreedingFacility.CopyTo(fileStream);
+                }
+            }
+            return filename;
         }
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
@@ -89,7 +111,8 @@ namespace quan_ly_tai_nguyen_rung.Controllers
                 ContactPhone = facility.ContactPhone,
                 Labor = facility.Labor,
                 Acreage = facility.Acreage,
-                CommuneId = facility.CommuneId
+                CommuneId = facility.CommuneId,
+                URL = facility.ImagePlantBreedingFacility
             };
             return View(facilityVM);
         }
@@ -115,6 +138,26 @@ namespace quan_ly_tai_nguyen_rung.Controllers
             facility.ContactPhone = facilityVM.ContactPhone;
             facility.Labor = facilityVM.Labor;
             facility.Acreage = facilityVM.Acreage;
+            if (facilityVM.RemoveImage && !string.IsNullOrEmpty(facility.ImagePlantBreedingFacility))
+            {
+                var imagePath = Path.Combine(_webHostEnvironment.WebRootPath, "Images", facility.ImagePlantBreedingFacility);
+                if (System.IO.File.Exists(imagePath))
+                {
+                    System.IO.File.Delete(imagePath); // Xóa file ảnh vật lý
+                }
+                facility.ImagePlantBreedingFacility = null; // Xóa thông tin ảnh trong cơ sở dữ liệu
+            }
+            else if (facilityVM.ImagePlantBreedingFacility != null)
+            {
+                // Upload ảnh mới
+                facility.ImagePlantBreedingFacility = UploadFile(facilityVM);
+            }
+            else
+            {
+                // Sử dụng ảnh cũ nếu không xóa và không tải ảnh mới
+                facility.ImagePlantBreedingFacility = facilityVM.URL;
+            }
+
             facility.CommuneId = facilityVM.CommuneId;
             _plantFacilityRepository.Update(facility);
             await _context.SaveChangesAsync();
@@ -159,75 +202,6 @@ namespace quan_ly_tai_nguyen_rung.Controllers
             _plantFacilityRepository.Delete(facility);
             return RedirectToAction("Index");
         }
-        // get image
-        public async Task<IActionResult> ViewImage(int id)
-        {
-            var facility = await _plantFacilityRepository.GetIdByAsync(id);
-            if(facility == null || string.IsNullOrEmpty(facility.ImagePlantBreedingFacility))
-            {
-                return View("Error");
-            }
-            return View(facility); // truyền toàn bộ facility thay vì chỉ có link ảnh
-        }
-        // bỏ hàm create vì thay bằng edit vẫn được 
-        // get edit
-        public async Task<IActionResult> EditImage(int id)
-        {
-            var facility = await _plantFacilityRepository.GetIdByAsync(id);
-            if (facility == null || string.IsNullOrEmpty(facility.ImagePlantBreedingFacility))
-            {
-                return View("Error");
-            }
-            return View(facility); // vẫn truyền cả cơ sở cho muốn làm gì thì làm 
-        }
-        [HttpPost]
-        public async Task<IActionResult> EditImage(int id,IFormFile image)
-        {
-            if (image == null || image.Length == 0) // rỗng( không tải file ) hoặc file trống 
-            {
-                ModelState.AddModelError("", " file ảnh trống hoặc rỗng !");
-                return View("Error");
-            }
-            var facility = await _plantFacilityRepository.GetIdByAsync(id);
-            if (facility != null) // tránh cơ sở có vẫn đề 
-            {
-                ModelState.AddModelError("", "cơ sở đã bị xóa đi khi bạn thêm ảnh !");
-                return View("Error");
-            }
-            if (!string.IsNullOrEmpty(facility.ImagePlantBreedingFacility))
-            {
-                var oldImage = Path.Combine("wwwroot/images/section2",facility.ImagePlantBreedingFacility.TrimStart('/'));
-                if (System.IO.File.Exists(oldImage))
-                {
-                    System.IO.File.Delete(oldImage);
-                }
-            }
-            var newImagePath = Path.Combine("wwwroot/images/section2", image.FileName);
-            using(var stream = new FileStream(newImagePath, FileMode.Create)) { 
-                await image.CopyToAsync(stream);
-            }
-            facility.ImagePlantBreedingFacility = $"/images/{image.FileName}";
-            _plantFacilityRepository.Update(facility);
-            await _context.SaveChangesAsync();
-            return View();
-        }
-        [HttpPost]
-        public async Task<IActionResult> DeleteImage(int id)
-        {
-            var facility = await _plantFacilityRepository.GetIdByAsync(id);
-            if (facility == null || string.IsNullOrEmpty(facility.ImagePlantBreedingFacility)) return View("Error");
-
-            var imagePath = Path.Combine("wwwroot/images/section2", facility.ImagePlantBreedingFacility);
-            if (System.IO.File.Exists(imagePath))
-            {
-                System.IO.File.Delete(imagePath);
-            }
-
-            facility.ImagePlantBreedingFacility = null;
-            _plantFacilityRepository.Update(facility);
-            await _context.SaveChangesAsync();
-
-            return View();
-        }
+        
     }
 }

@@ -2,6 +2,7 @@
 @model PlantFacilityViewModel
 
 <form method="post" asp-action="Edit" enctype="multipart/form-data">
+    <input type="hidden" asp-for="URL" />
     <div class="form-group">
         <label asp-for="Name">Tên cơ sở</label>
         <input asp-for="Name" class="form-control" placeholder="Nhập tên cơ sở">
@@ -55,7 +56,15 @@
     <div class="form-group">
         <label asp-for="ImagePlantBreedingFacility">Ảnh cơ sở giống cây trồng</label>
         <input asp-for="ImagePlantBreedingFacility" type="file" class="form-control">
-        <span asp-validation-for="ImagePlantBreedingFacility" class="text-danger"></span>
+        @if (!string.IsNullOrEmpty(Model.URL))
+        {
+            <p>Hình ảnh hiện tại:</p>
+            <img src="~/Images/@Model.URL" alt="Current Image" style="max-width: 200px;" />
+            <div class="form-check mt-2">
+                <input type="checkbox" asp-for="RemoveImage" class="form-check-input" id="removeImageCheckbox" />
+                <label class="form-check-label" for="removeImageCheckbox">Xóa ảnh hiện tại</label>
+            </div>
+        }
     </div>
 
     <button type="submit" class="btn btn-primary">Cập nhật</button>
